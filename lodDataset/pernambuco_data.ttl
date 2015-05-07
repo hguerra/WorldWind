@@ -1,0 +1,572 @@
+@prefix dc:      <http://purl.org/dc/terms/> .
+@prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
+
+@prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix dbpedia: <http://dbpedia.org/resource/> .
+@prefix brazil:  <http://brazil.municipalities.br/pernambuco/> .
+@prefix foaf:	 <http://xmlns.com/foaf/0.1/> .
+@prefix tisc:	 <http://observedchange.com/tisc/ns#> .
+
+
+brazil:PERNAMBUCO_MUNICIPALITY_2600203 foaf:name "Afranio"^^xsd:string .
+brazil:PERNAMBUCO_MUNICIPALITY_2611101 foaf:name "Petrolina"^^xsd:string .
+brazil:PERNAMBUCO_MUNICIPALITY_2605152 foaf:name "Dormentes"^^xsd:string .
+brazil:PERNAMBUCO_MUNICIPALITY_2612554 foaf:name "Santa Filomena"^^xsd:string .
+brazil:PERNAMBUCO_MUNICIPALITY_2601102 foaf:name "Araripina"^^xsd:string .
+brazil:PERNAMBUCO_MUNICIPALITY_2609907 foaf:name "Ouricuri"^^xsd:string .
+brazil:PERNAMBUCO_MUNICIPALITY_2612455 foaf:name "Santa Cruz"^^xsd:string .
+brazil:PERNAMBUCO_MUNICIPALITY_2608750 foaf:name "Lagoa Grande"^^xsd:string .
+brazil:PERNAMBUCO_MUNICIPALITY_2607307 foaf:name "Ipubi"^^xsd:string .
+brazil:PERNAMBUCO_MUNICIPALITY_2615607 foaf:name "Trindade"^^xsd:string .
+brazil:PERNAMBUCO_MUNICIPALITY_2612604 foaf:name "Santa Maria da Boa Vista"^^xsd:string .
+brazil:PERNAMBUCO_MUNICIPALITY_2610400 foaf:name "Parnamirim"^^xsd:string .
+brazil:PERNAMBUCO_MUNICIPALITY_2602001 foaf:name "Bodoco"^^xsd:string .
+brazil:PERNAMBUCO_MUNICIPALITY_2605301 foaf:name "Exu"^^xsd:string .
+brazil:PERNAMBUCO_MUNICIPALITY_2606309 foaf:name "Granito"^^xsd:string .
+brazil:PERNAMBUCO_MUNICIPALITY_2609808 foaf:name "Oroco"^^xsd:string .
+brazil:PERNAMBUCO_MUNICIPALITY_2614303 foaf:name "Moreilandia"^^xsd:string .
+brazil:PERNAMBUCO_MUNICIPALITY_2614006 foaf:name "Serrita"^^xsd:string .
+brazil:PERNAMBUCO_MUNICIPALITY_2603009 foaf:name "Cabrobo"^^xsd:string .
+brazil:PERNAMBUCO_MUNICIPALITY_2615201 foaf:name "Terra Nova"^^xsd:string .
+brazil:PERNAMBUCO_MUNICIPALITY_2612208 foaf:name "Salgueiro"^^xsd:string .
+brazil:PERNAMBUCO_MUNICIPALITY_2601607 foaf:name "Belem de Sao Francisco"^^xsd:string .
+brazil:PERNAMBUCO_MUNICIPALITY_2604304 foaf:name "Cedro"^^xsd:string .
+brazil:PERNAMBUCO_MUNICIPALITY_2616100 foaf:name "Verdejante"^^xsd:string .
+brazil:PERNAMBUCO_MUNICIPALITY_2613503 foaf:name "Sao Jose do Belmonte"^^xsd:string .
+brazil:PERNAMBUCO_MUNICIPALITY_2609303 foaf:name "Mirandiba"^^xsd:string .
+brazil:PERNAMBUCO_MUNICIPALITY_2603926 foaf:name "Carnaubeira da Penha"^^xsd:string .
+brazil:PERNAMBUCO_MUNICIPALITY_2607406 foaf:name "Itacuruba"^^xsd:string .
+brazil:PERNAMBUCO_MUNICIPALITY_2605707 foaf:name "Floresta"^^xsd:string .
+brazil:PERNAMBUCO_MUNICIPALITY_2613909 foaf:name "Serra Talhada"^^xsd:string .
+brazil:PERNAMBUCO_MUNICIPALITY_2611002 foaf:name "Petrolandia"^^xsd:string .
+brazil:PERNAMBUCO_MUNICIPALITY_2608057 foaf:name "Jatoba"^^xsd:string .
+brazil:PERNAMBUCO_MUNICIPALITY_2614808 foaf:name "Tacaratu"^^xsd:string .
+brazil:PERNAMBUCO_MUNICIPALITY_2612471 foaf:name "Santa Cruz da Baixa Verde"^^xsd:string .
+brazil:PERNAMBUCO_MUNICIPALITY_2601805 foaf:name "Betania"^^xsd:string .
+brazil:PERNAMBUCO_MUNICIPALITY_2603405 foaf:name "Calumbi"^^xsd:string .
+brazil:PERNAMBUCO_MUNICIPALITY_2615706 foaf:name "Triunfo"^^xsd:string .
+brazil:PERNAMBUCO_MUNICIPALITY_2605608 foaf:name "Flores"^^xsd:string .
+brazil:PERNAMBUCO_MUNICIPALITY_2607000 foaf:name "Inaja"^^xsd:string .
+brazil:PERNAMBUCO_MUNICIPALITY_2611533 foaf:name "Quixaba"^^xsd:string .
+brazil:PERNAMBUCO_MUNICIPALITY_2606606 foaf:name "Ibimirim"^^xsd:string .
+brazil:PERNAMBUCO_MUNICIPALITY_2605103 foaf:name "Custodia"^^xsd:string .
+brazil:PERNAMBUCO_MUNICIPALITY_2603900 foaf:name "Carnaiba"^^xsd:string .
+brazil:PERNAMBUCO_MUNICIPALITY_2609154 foaf:name "Manari"^^xsd:string .
+brazil:PERNAMBUCO_MUNICIPALITY_2614402 foaf:name "Solidao"^^xsd:string .
+brazil:PERNAMBUCO_MUNICIPALITY_2600104 foaf:name "Afogados da Ingazeira"^^xsd:string .
+brazil:PERNAMBUCO_MUNICIPALITY_2614105 foaf:name "Sertania"^^xsd:string .
+brazil:PERNAMBUCO_MUNICIPALITY_2606903 foaf:name "Iguaraci"^^xsd:string .
+brazil:PERNAMBUCO_MUNICIPALITY_2614600 foaf:name "Tabira"^^xsd:string .
+brazil:PERNAMBUCO_MUNICIPALITY_2607505 foaf:name "Itaiba"^^xsd:string .
+brazil:PERNAMBUCO_MUNICIPALITY_2607109 foaf:name "Ingazeira"^^xsd:string .
+brazil:PERNAMBUCO_MUNICIPALITY_2612802 foaf:name "Santa Terezinha"^^xsd:string .
+brazil:PERNAMBUCO_MUNICIPALITY_2613602 foaf:name "Sao Jose do Egito"^^xsd:string .
+brazil:PERNAMBUCO_MUNICIPALITY_2602506 foaf:name "Brejinho"^^xsd:string .
+brazil:PERNAMBUCO_MUNICIPALITY_2615805 foaf:name "Tupanatinga"^^xsd:string .
+brazil:PERNAMBUCO_MUNICIPALITY_2615904 foaf:name "Tuparetama"^^xsd:string .
+brazil:PERNAMBUCO_MUNICIPALITY_2602803 foaf:name "Buique"^^xsd:string .
+brazil:PERNAMBUCO_MUNICIPALITY_2607703 foaf:name "Itapetim"^^xsd:string .
+brazil:PERNAMBUCO_MUNICIPALITY_2600500 foaf:name "Aguas Belas"^^xsd:string .
+brazil:PERNAMBUCO_MUNICIPALITY_2601201 foaf:name "Arcoverde"^^xsd:string .
+brazil:PERNAMBUCO_MUNICIPALITY_2606507 foaf:name "Iati"^^xsd:string .
+brazil:PERNAMBUCO_MUNICIPALITY_2610806 foaf:name "Pedra"^^xsd:string .
+brazil:PERNAMBUCO_MUNICIPALITY_2610905 foaf:name "Pesqueira"^^xsd:string .
+brazil:PERNAMBUCO_MUNICIPALITY_2602100 foaf:name "Bom Conselho"^^xsd:string .
+brazil:PERNAMBUCO_MUNICIPALITY_2616001 foaf:name "Venturosa"^^xsd:string .
+brazil:PERNAMBUCO_MUNICIPALITY_2612307 foaf:name "Salo�"^^xsd:string .
+brazil:PERNAMBUCO_MUNICIPALITY_2610301 foaf:name "Paranatama"^^xsd:string .
+brazil:PERNAMBUCO_MUNICIPALITY_2603207 foaf:name "Caetes"^^xsd:string .
+brazil:PERNAMBUCO_MUNICIPALITY_2600609 foaf:name "Alagoinha"^^xsd:string .
+brazil:PERNAMBUCO_MUNICIPALITY_2611200 foaf:name "Pocao"^^xsd:string .
+brazil:PERNAMBUCO_MUNICIPALITY_2615102 foaf:name "Terezinha"^^xsd:string .
+brazil:PERNAMBUCO_MUNICIPALITY_2603801 foaf:name "Capoeiras"^^xsd:string .
+brazil:PERNAMBUCO_MUNICIPALITY_2608008 foaf:name "Jatauba"^^xsd:string .
+brazil:PERNAMBUCO_MUNICIPALITY_2606002 foaf:name "Garanhuns"^^xsd:string .
+brazil:PERNAMBUCO_MUNICIPALITY_2602407 foaf:name "Brejao"^^xsd:string .
+brazil:PERNAMBUCO_MUNICIPALITY_2612406 foaf:name "Sanhare"^^xsd:string .
+brazil:PERNAMBUCO_MUNICIPALITY_2613008 foaf:name "Sao Bento do Una"^^xsd:string .
+brazil:PERNAMBUCO_MUNICIPALITY_2601706 foaf:name "Belo Jardim"^^xsd:string .
+brazil:PERNAMBUCO_MUNICIPALITY_2608602 foaf:name "Lagoa do Ouro"^^xsd:string .
+brazil:PERNAMBUCO_MUNICIPALITY_2608255 foaf:name "Jucati"^^xsd:string .
+brazil:PERNAMBUCO_MUNICIPALITY_2604700 foaf:name "Correntes"^^xsd:string .
+brazil:PERNAMBUCO_MUNICIPALITY_2613206 foaf:name "Sao Joao"^^xsd:string .
+brazil:PERNAMBUCO_MUNICIPALITY_2608305 foaf:name "Jupi"^^xsd:string .
+brazil:PERNAMBUCO_MUNICIPALITY_2602605 foaf:name "Brejo da Madre de Deus"^^xsd:string .
+brazil:PERNAMBUCO_MUNICIPALITY_2612505 foaf:name "Santa Cruz do Capibaribe"^^xsd:string .
+brazil:PERNAMBUCO_MUNICIPALITY_2610103 foaf:name "Palmeirina"^^xsd:string .
+brazil:PERNAMBUCO_MUNICIPALITY_2608800 foaf:name "Lajedo"^^xsd:string .
+brazil:PERNAMBUCO_MUNICIPALITY_2603306 foaf:name "Calcado"^^xsd:string .
+brazil:PERNAMBUCO_MUNICIPALITY_2601003 foaf:name "Angelim"^^xsd:string .
+brazil:PERNAMBUCO_MUNICIPALITY_2603108 foaf:name "Cachoeirinha"^^xsd:string .
+brazil:PERNAMBUCO_MUNICIPALITY_2614709 foaf:name "Tacaimbo"^^xsd:string .
+brazil:PERNAMBUCO_MUNICIPALITY_2603702 foaf:name "Canhotinho"^^xsd:string .
+brazil:PERNAMBUCO_MUNICIPALITY_2606705 foaf:name "Ibirajuba"^^xsd:string .
+brazil:PERNAMBUCO_MUNICIPALITY_2600807 foaf:name "Altinho"^^xsd:string .
+brazil:PERNAMBUCO_MUNICIPALITY_2615003 foaf:name "Taquaritinga do Norte"^^xsd:string .
+brazil:PERNAMBUCO_MUNICIPALITY_2608404 foaf:name "Jurema"^^xsd:string .
+brazil:PERNAMBUCO_MUNICIPALITY_2610202 foaf:name "Panelas"^^xsd:string .
+brazil:PERNAMBUCO_MUNICIPALITY_2604106 foaf:name "Caruaru"^^xsd:string .
+brazil:PERNAMBUCO_MUNICIPALITY_2611507 foaf:name "Quipapa"^^xsd:string .
+brazil:PERNAMBUCO_MUNICIPALITY_2615409 foaf:name "Toritama"^^xsd:string .
+brazil:PERNAMBUCO_MUNICIPALITY_2616209 foaf:name "Vertentes"^^xsd:string .
+brazil:PERNAMBUCO_MUNICIPALITY_2600302 foaf:name "Agrestina"^^xsd:string .
+brazil:PERNAMBUCO_MUNICIPALITY_2605004 foaf:name "Cupira"^^xsd:string .
+brazil:PERNAMBUCO_MUNICIPALITY_2608701 foaf:name "Lagoa dos Gatos"^^xsd:string .
+brazil:PERNAMBUCO_MUNICIPALITY_2612901 foaf:name "Sao Benedito do Sul"^^xsd:string .
+brazil:PERNAMBUCO_MUNICIPALITY_2611705 foaf:name "Riacho das Almas"^^xsd:string .
+brazil:PERNAMBUCO_MUNICIPALITY_2605806 foaf:name "Frei Miguelinho"^^xsd:string .
+brazil:PERNAMBUCO_MUNICIPALITY_2613305 foaf:name "Sao Joaquim do Monte"^^xsd:string .
+brazil:PERNAMBUCO_MUNICIPALITY_2601904 foaf:name "Bezerros"^^xsd:string .
+brazil:PERNAMBUCO_MUNICIPALITY_2612703 foaf:name "Santa Maria do Cambuca"^^xsd:string .
+brazil:PERNAMBUCO_MUNICIPALITY_2607950 foaf:name "Jaqueira"^^xsd:string .
+brazil:PERNAMBUCO_MUNICIPALITY_2609204 foaf:name "Maraial"^^xsd:string .
+brazil:PERNAMBUCO_MUNICIPALITY_2601508 foaf:name "Belem de Maria"^^xsd:string .
+brazil:PERNAMBUCO_MUNICIPALITY_2616183 foaf:name "Vertente do Lerio"^^xsd:string .
+brazil:PERNAMBUCO_MUNICIPALITY_2602308 foaf:name "Bonito"^^xsd:string .
+brazil:PERNAMBUCO_MUNICIPALITY_2604205 foaf:name "Catende"^^xsd:string .
+brazil:PERNAMBUCO_MUNICIPALITY_2604908 foaf:name "Cumaru"^^xsd:string .
+brazil:PERNAMBUCO_MUNICIPALITY_2614501 foaf:name "Surubim"^^xsd:string .
+brazil:PERNAMBUCO_MUNICIPALITY_2603504 foaf:name "Camocim de Sao Felix"^^xsd:string .
+brazil:PERNAMBUCO_MUNICIPALITY_2604155 foaf:name "Casinhas"^^xsd:string .
+brazil:PERNAMBUCO_MUNICIPALITY_2612000 foaf:name "Saire"^^xsd:string .
+brazil:PERNAMBUCO_MUNICIPALITY_2616506 foaf:name "Xexeu"^^xsd:string .
+brazil:PERNAMBUCO_MUNICIPALITY_2610004 foaf:name "Palmares"^^xsd:string .
+brazil:PERNAMBUCO_MUNICIPALITY_2601300 foaf:name "Barra de Guabiraba"^^xsd:string .
+brazil:PERNAMBUCO_MUNICIPALITY_2602209 foaf:name "Bom Jardim"^^xsd:string .
+brazil:PERNAMBUCO_MUNICIPALITY_2608107 foaf:name "Joao Alfredo"^^xsd:string .
+brazil:PERNAMBUCO_MUNICIPALITY_2612109 foaf:name "Salgadinho"^^xsd:string .
+brazil:PERNAMBUCO_MUNICIPALITY_2609709 foaf:name "Orobo"^^xsd:string .
+brazil:PERNAMBUCO_MUNICIPALITY_2610509 foaf:name "Passira"^^xsd:string .
+brazil:PERNAMBUCO_MUNICIPALITY_2606408 foaf:name "Gravata"^^xsd:string .
+brazil:PERNAMBUCO_MUNICIPALITY_2600401 foaf:name "Agua Preta"^^xsd:string .
+brazil:PERNAMBUCO_MUNICIPALITY_2608206 foaf:name "Joaquim Nabuco"^^xsd:string .
+brazil:PERNAMBUCO_MUNICIPALITY_2604809 foaf:name "Cortes"^^xsd:string .
+brazil:PERNAMBUCO_MUNICIPALITY_2600906 foaf:name "Amaraji"^^xsd:string .
+brazil:PERNAMBUCO_MUNICIPALITY_2609105 foaf:name "Machados"^^xsd:string .
+brazil:PERNAMBUCO_MUNICIPALITY_2611804 foaf:name "Ribeirao"^^xsd:string .
+brazil:PERNAMBUCO_MUNICIPALITY_2608909 foaf:name "Limoeiro"^^xsd:string .
+brazil:PERNAMBUCO_MUNICIPALITY_2604502 foaf:name "Cha Grande"^^xsd:string .
+brazil:PERNAMBUCO_MUNICIPALITY_2613800 foaf:name "Sao Vicente Ferrer"^^xsd:string .
+brazil:PERNAMBUCO_MUNICIPALITY_2605905 foaf:name "Gameleira"^^xsd:string .
+brazil:PERNAMBUCO_MUNICIPALITY_2609006 foaf:name "Macaparana"^^xsd:string .
+brazil:PERNAMBUCO_MUNICIPALITY_2611309 foaf:name "Pombos"^^xsd:string .
+brazil:PERNAMBUCO_MUNICIPALITY_2611408 foaf:name "Primavera"^^xsd:string .
+brazil:PERNAMBUCO_MUNICIPALITY_2606101 foaf:name "Gloria do Goita"^^xsd:string .
+brazil:PERNAMBUCO_MUNICIPALITY_2605400 foaf:name "Feira Nova"^^xsd:string .
+brazil:PERNAMBUCO_MUNICIPALITY_2601409 foaf:name "Barreiros"^^xsd:string .
+brazil:PERNAMBUCO_MUNICIPALITY_2616308 foaf:name "Vicencia"^^xsd:string .
+brazil:PERNAMBUCO_MUNICIPALITY_2616407 foaf:name "Vitoria de Santo Antao"^^xsd:string .
+brazil:PERNAMBUCO_MUNICIPALITY_2602704 foaf:name "Buenos Aires"^^xsd:string .
+brazil:PERNAMBUCO_MUNICIPALITY_2615300 foaf:name "Timbauba"^^xsd:string .
+brazil:PERNAMBUCO_MUNICIPALITY_2613107 foaf:name "Sao Caitano"^^xsd:string .
+brazil:PERNAMBUCO_MUNICIPALITY_2604007 foaf:name "Carpina"^^xsd:string .
+brazil:PERNAMBUCO_MUNICIPALITY_2608453 foaf:name "Lagoa do Carro"^^xsd:string .
+brazil:PERNAMBUCO_MUNICIPALITY_2611903 foaf:name "Rio Formoso"^^xsd:string .
+brazil:PERNAMBUCO_MUNICIPALITY_2605202 foaf:name "Escada"^^xsd:string .
+brazil:PERNAMBUCO_MUNICIPALITY_2614857 foaf:name "Tamandare"^^xsd:string .
+brazil:PERNAMBUCO_MUNICIPALITY_2608503 foaf:name "Lagoa do Itaenga"^^xsd:string .
+brazil:PERNAMBUCO_MUNICIPALITY_2603603 foaf:name "Camutanga"^^xsd:string .
+brazil:PERNAMBUCO_MUNICIPALITY_2607653 foaf:name "Itambe"^^xsd:string .
+brazil:PERNAMBUCO_MUNICIPALITY_2614204 foaf:name "Sirinhaem"^^xsd:string .
+brazil:PERNAMBUCO_MUNICIPALITY_2613404 foaf:name "Sao Jose da Coroa Grande"^^xsd:string .
+brazil:PERNAMBUCO_MUNICIPALITY_2609501 foaf:name "Nazare da Mata"^^xsd:string .
+brazil:PERNAMBUCO_MUNICIPALITY_2605509 foaf:name "Ferreiros"^^xsd:string .
+brazil:PERNAMBUCO_MUNICIPALITY_2602902 foaf:name "Cabo de Santo Agostinho"^^xsd:string .
+brazil:PERNAMBUCO_MUNICIPALITY_2604403 foaf:name "Cha de Alegria"^^xsd:string .
+brazil:PERNAMBUCO_MUNICIPALITY_2607208 foaf:name "Ipojuca"^^xsd:string .
+brazil:PERNAMBUCO_MUNICIPALITY_2600708 foaf:name "Alianca"^^xsd:string .
+brazil:PERNAMBUCO_MUNICIPALITY_2610608 foaf:name "Paudalho"^^xsd:string .
+brazil:PERNAMBUCO_MUNICIPALITY_2615508 foaf:name "Tracunhaem"^^xsd:string .
+brazil:PERNAMBUCO_MUNICIPALITY_2609402 foaf:name "Moreno"^^xsd:string .
+brazil:PERNAMBUCO_MUNICIPALITY_2613701 foaf:name "Sao Lourenco da Mata"^^xsd:string .
+brazil:PERNAMBUCO_MUNICIPALITY_2600054 foaf:name "Abreu e Lima"^^xsd:string .
+brazil:PERNAMBUCO_MUNICIPALITY_2601052 foaf:name "Aracoiaba"^^xsd:string .
+brazil:PERNAMBUCO_MUNICIPALITY_2604601 foaf:name "Condado"^^xsd:string .
+brazil:PERNAMBUCO_MUNICIPALITY_2607901 foaf:name "Jaboatao dos Guararapes"^^xsd:string .
+brazil:PERNAMBUCO_MUNICIPALITY_2607802 foaf:name "Itaquitinga"^^xsd:string .
+brazil:PERNAMBUCO_MUNICIPALITY_2606804 foaf:name "Igarassu"^^xsd:string .
+brazil:PERNAMBUCO_MUNICIPALITY_2606200 foaf:name "Goiana"^^xsd:string .
+brazil:PERNAMBUCO_MUNICIPALITY_2603454 foaf:name "Camaragibe"^^xsd:string .
+brazil:PERNAMBUCO_MUNICIPALITY_2611606 foaf:name "Recife"^^xsd:string .
+brazil:PERNAMBUCO_MUNICIPALITY_2610707 foaf:name "Paulista"^^xsd:string .
+brazil:PERNAMBUCO_MUNICIPALITY_2607752 foaf:name "Itapissuma"^^xsd:string .
+brazil:PERNAMBUCO_MUNICIPALITY_2609600 foaf:name "Olinda"^^xsd:string .
+brazil:PERNAMBUCO_MUNICIPALITY_2607604 foaf:name "Ilha de Itamaraca"^^xsd:string .
+brazil:PERNAMBUCO_MUNICIPALITY_2605459 foaf:name "Fernando de Noronha"^^xsd:string .
+
+
+
+brazil:PERNAMBUCO_MUNICIPALITY_2600203 tisc:areasize "1491"^^xsd:integer .
+brazil:PERNAMBUCO_MUNICIPALITY_2611101 tisc:areasize "4559"^^xsd:integer .
+brazil:PERNAMBUCO_MUNICIPALITY_2605152 tisc:areasize "1538"^^xsd:integer .
+brazil:PERNAMBUCO_MUNICIPALITY_2612554 tisc:areasize "1005"^^xsd:integer .
+brazil:PERNAMBUCO_MUNICIPALITY_2601102 tisc:areasize "1847"^^xsd:integer .
+brazil:PERNAMBUCO_MUNICIPALITY_2609907 tisc:areasize "2423"^^xsd:integer .
+brazil:PERNAMBUCO_MUNICIPALITY_2612455 tisc:areasize "1256"^^xsd:integer .
+brazil:PERNAMBUCO_MUNICIPALITY_2608750 tisc:areasize "1852"^^xsd:integer .
+brazil:PERNAMBUCO_MUNICIPALITY_2607307 tisc:areasize "666"^^xsd:integer .
+brazil:PERNAMBUCO_MUNICIPALITY_2615607 tisc:areasize "230"^^xsd:integer .
+brazil:PERNAMBUCO_MUNICIPALITY_2612604 tisc:areasize "3001"^^xsd:integer .
+brazil:PERNAMBUCO_MUNICIPALITY_2610400 tisc:areasize "2608"^^xsd:integer .
+brazil:PERNAMBUCO_MUNICIPALITY_2602001 tisc:areasize "1554"^^xsd:integer .
+brazil:PERNAMBUCO_MUNICIPALITY_2605301 tisc:areasize "1474"^^xsd:integer .
+brazil:PERNAMBUCO_MUNICIPALITY_2606309 tisc:areasize "522"^^xsd:integer .
+brazil:PERNAMBUCO_MUNICIPALITY_2609808 tisc:areasize "555"^^xsd:integer .
+brazil:PERNAMBUCO_MUNICIPALITY_2614303 tisc:areasize "638"^^xsd:integer .
+brazil:PERNAMBUCO_MUNICIPALITY_2614006 tisc:areasize "1604"^^xsd:integer .
+brazil:PERNAMBUCO_MUNICIPALITY_2603009 tisc:areasize "1658"^^xsd:integer .
+brazil:PERNAMBUCO_MUNICIPALITY_2615201 tisc:areasize "361"^^xsd:integer .
+brazil:PERNAMBUCO_MUNICIPALITY_2612208 tisc:areasize "1639"^^xsd:integer .
+brazil:PERNAMBUCO_MUNICIPALITY_2601607 tisc:areasize "1831"^^xsd:integer .
+brazil:PERNAMBUCO_MUNICIPALITY_2604304 tisc:areasize "144"^^xsd:integer .
+brazil:PERNAMBUCO_MUNICIPALITY_2616100 tisc:areasize "476"^^xsd:integer .
+brazil:PERNAMBUCO_MUNICIPALITY_2613503 tisc:areasize "1480"^^xsd:integer .
+brazil:PERNAMBUCO_MUNICIPALITY_2609303 tisc:areasize "809"^^xsd:integer .
+brazil:PERNAMBUCO_MUNICIPALITY_2603926 tisc:areasize "1010"^^xsd:integer .
+brazil:PERNAMBUCO_MUNICIPALITY_2607406 tisc:areasize "430"^^xsd:integer .
+brazil:PERNAMBUCO_MUNICIPALITY_2605707 tisc:areasize "3644"^^xsd:integer .
+brazil:PERNAMBUCO_MUNICIPALITY_2613909 tisc:areasize "2980"^^xsd:integer .
+brazil:PERNAMBUCO_MUNICIPALITY_2611002 tisc:areasize "1057"^^xsd:integer .
+brazil:PERNAMBUCO_MUNICIPALITY_2608057 tisc:areasize "278"^^xsd:integer .
+brazil:PERNAMBUCO_MUNICIPALITY_2614808 tisc:areasize "1265"^^xsd:integer .
+brazil:PERNAMBUCO_MUNICIPALITY_2612471 tisc:areasize "115"^^xsd:integer .
+brazil:PERNAMBUCO_MUNICIPALITY_2601805 tisc:areasize "1244"^^xsd:integer .
+brazil:PERNAMBUCO_MUNICIPALITY_2603405 tisc:areasize "221"^^xsd:integer .
+brazil:PERNAMBUCO_MUNICIPALITY_2615706 tisc:areasize "192"^^xsd:integer .
+brazil:PERNAMBUCO_MUNICIPALITY_2605608 tisc:areasize "954"^^xsd:integer .
+brazil:PERNAMBUCO_MUNICIPALITY_2607000 tisc:areasize "1182"^^xsd:integer .
+brazil:PERNAMBUCO_MUNICIPALITY_2611533 tisc:areasize "210"^^xsd:integer .
+brazil:PERNAMBUCO_MUNICIPALITY_2606606 tisc:areasize "2034"^^xsd:integer .
+brazil:PERNAMBUCO_MUNICIPALITY_2605103 tisc:areasize "1404"^^xsd:integer .
+brazil:PERNAMBUCO_MUNICIPALITY_2603900 tisc:areasize "437"^^xsd:integer .
+brazil:PERNAMBUCO_MUNICIPALITY_2609154 tisc:areasize "407"^^xsd:integer .
+brazil:PERNAMBUCO_MUNICIPALITY_2614402 tisc:areasize "138"^^xsd:integer .
+brazil:PERNAMBUCO_MUNICIPALITY_2600104 tisc:areasize "378"^^xsd:integer .
+brazil:PERNAMBUCO_MUNICIPALITY_2614105 tisc:areasize "2422"^^xsd:integer .
+brazil:PERNAMBUCO_MUNICIPALITY_2606903 tisc:areasize "838"^^xsd:integer .
+brazil:PERNAMBUCO_MUNICIPALITY_2614600 tisc:areasize "388"^^xsd:integer .
+brazil:PERNAMBUCO_MUNICIPALITY_2607505 tisc:areasize "1068"^^xsd:integer .
+brazil:PERNAMBUCO_MUNICIPALITY_2607109 tisc:areasize "244"^^xsd:integer .
+brazil:PERNAMBUCO_MUNICIPALITY_2612802 tisc:areasize "196"^^xsd:integer .
+brazil:PERNAMBUCO_MUNICIPALITY_2613602 tisc:areasize "792"^^xsd:integer .
+brazil:PERNAMBUCO_MUNICIPALITY_2602506 tisc:areasize "106"^^xsd:integer .
+brazil:PERNAMBUCO_MUNICIPALITY_2615805 tisc:areasize "796"^^xsd:integer .
+brazil:PERNAMBUCO_MUNICIPALITY_2615904 tisc:areasize "186"^^xsd:integer .
+brazil:PERNAMBUCO_MUNICIPALITY_2602803 tisc:areasize "1345"^^xsd:integer .
+brazil:PERNAMBUCO_MUNICIPALITY_2607703 tisc:areasize "405"^^xsd:integer .
+brazil:PERNAMBUCO_MUNICIPALITY_2600500 tisc:areasize "886"^^xsd:integer .
+brazil:PERNAMBUCO_MUNICIPALITY_2601201 tisc:areasize "353"^^xsd:integer .
+brazil:PERNAMBUCO_MUNICIPALITY_2606507 tisc:areasize "635"^^xsd:integer .
+brazil:PERNAMBUCO_MUNICIPALITY_2610806 tisc:areasize "803"^^xsd:integer .
+brazil:PERNAMBUCO_MUNICIPALITY_2610905 tisc:areasize "1000"^^xsd:integer .
+brazil:PERNAMBUCO_MUNICIPALITY_2602100 tisc:areasize "786"^^xsd:integer .
+brazil:PERNAMBUCO_MUNICIPALITY_2616001 tisc:areasize "338"^^xsd:integer .
+brazil:PERNAMBUCO_MUNICIPALITY_2612307 tisc:areasize "252"^^xsd:integer .
+brazil:PERNAMBUCO_MUNICIPALITY_2610301 tisc:areasize "231"^^xsd:integer .
+brazil:PERNAMBUCO_MUNICIPALITY_2603207 tisc:areasize "330"^^xsd:integer .
+brazil:PERNAMBUCO_MUNICIPALITY_2600609 tisc:areasize "200"^^xsd:integer .
+brazil:PERNAMBUCO_MUNICIPALITY_2611200 tisc:areasize "200"^^xsd:integer .
+brazil:PERNAMBUCO_MUNICIPALITY_2615102 tisc:areasize "151"^^xsd:integer .
+brazil:PERNAMBUCO_MUNICIPALITY_2603801 tisc:areasize "335"^^xsd:integer .
+brazil:PERNAMBUCO_MUNICIPALITY_2608008 tisc:areasize "719"^^xsd:integer .
+brazil:PERNAMBUCO_MUNICIPALITY_2606002 tisc:areasize "472"^^xsd:integer .
+brazil:PERNAMBUCO_MUNICIPALITY_2602407 tisc:areasize "160"^^xsd:integer .
+brazil:PERNAMBUCO_MUNICIPALITY_2612406 tisc:areasize "256"^^xsd:integer .
+brazil:PERNAMBUCO_MUNICIPALITY_2613008 tisc:areasize "727"^^xsd:integer .
+brazil:PERNAMBUCO_MUNICIPALITY_2601706 tisc:areasize "648"^^xsd:integer .
+brazil:PERNAMBUCO_MUNICIPALITY_2608602 tisc:areasize "199"^^xsd:integer .
+brazil:PERNAMBUCO_MUNICIPALITY_2608255 tisc:areasize "121"^^xsd:integer .
+brazil:PERNAMBUCO_MUNICIPALITY_2604700 tisc:areasize "339"^^xsd:integer .
+brazil:PERNAMBUCO_MUNICIPALITY_2613206 tisc:areasize "244"^^xsd:integer .
+brazil:PERNAMBUCO_MUNICIPALITY_2608305 tisc:areasize "113"^^xsd:integer .
+brazil:PERNAMBUCO_MUNICIPALITY_2602605 tisc:areasize "762"^^xsd:integer .
+brazil:PERNAMBUCO_MUNICIPALITY_2612505 tisc:areasize "336"^^xsd:integer .
+brazil:PERNAMBUCO_MUNICIPALITY_2610103 tisc:areasize "158"^^xsd:integer .
+brazil:PERNAMBUCO_MUNICIPALITY_2608800 tisc:areasize "189"^^xsd:integer .
+brazil:PERNAMBUCO_MUNICIPALITY_2603306 tisc:areasize "114"^^xsd:integer .
+brazil:PERNAMBUCO_MUNICIPALITY_2601003 tisc:areasize "118"^^xsd:integer .
+brazil:PERNAMBUCO_MUNICIPALITY_2603108 tisc:areasize "179"^^xsd:integer .
+brazil:PERNAMBUCO_MUNICIPALITY_2614709 tisc:areasize "228"^^xsd:integer .
+brazil:PERNAMBUCO_MUNICIPALITY_2603702 tisc:areasize "423"^^xsd:integer .
+brazil:PERNAMBUCO_MUNICIPALITY_2606705 tisc:areasize "190"^^xsd:integer .
+brazil:PERNAMBUCO_MUNICIPALITY_2600807 tisc:areasize "454"^^xsd:integer .
+brazil:PERNAMBUCO_MUNICIPALITY_2615003 tisc:areasize "475"^^xsd:integer .
+brazil:PERNAMBUCO_MUNICIPALITY_2608404 tisc:areasize "148"^^xsd:integer .
+brazil:PERNAMBUCO_MUNICIPALITY_2610202 tisc:areasize "371"^^xsd:integer .
+brazil:PERNAMBUCO_MUNICIPALITY_2604106 tisc:areasize "921"^^xsd:integer .
+brazil:PERNAMBUCO_MUNICIPALITY_2611507 tisc:areasize "231"^^xsd:integer .
+brazil:PERNAMBUCO_MUNICIPALITY_2615409 tisc:areasize "31"^^xsd:integer .
+brazil:PERNAMBUCO_MUNICIPALITY_2616209 tisc:areasize "191"^^xsd:integer .
+brazil:PERNAMBUCO_MUNICIPALITY_2600302 tisc:areasize "201"^^xsd:integer .
+brazil:PERNAMBUCO_MUNICIPALITY_2605004 tisc:areasize "106"^^xsd:integer .
+brazil:PERNAMBUCO_MUNICIPALITY_2608701 tisc:areasize "233"^^xsd:integer .
+brazil:PERNAMBUCO_MUNICIPALITY_2612901 tisc:areasize "157"^^xsd:integer .
+brazil:PERNAMBUCO_MUNICIPALITY_2611705 tisc:areasize "314"^^xsd:integer .
+brazil:PERNAMBUCO_MUNICIPALITY_2605806 tisc:areasize "213"^^xsd:integer .
+brazil:PERNAMBUCO_MUNICIPALITY_2613305 tisc:areasize "243"^^xsd:integer .
+brazil:PERNAMBUCO_MUNICIPALITY_2601904 tisc:areasize "493"^^xsd:integer .
+brazil:PERNAMBUCO_MUNICIPALITY_2612703 tisc:areasize "92"^^xsd:integer .
+brazil:PERNAMBUCO_MUNICIPALITY_2607950 tisc:areasize "89"^^xsd:integer .
+brazil:PERNAMBUCO_MUNICIPALITY_2609204 tisc:areasize "196"^^xsd:integer .
+brazil:PERNAMBUCO_MUNICIPALITY_2601508 tisc:areasize "69"^^xsd:integer .
+brazil:PERNAMBUCO_MUNICIPALITY_2616183 tisc:areasize "476"^^xsd:integer .
+brazil:PERNAMBUCO_MUNICIPALITY_2602308 tisc:areasize "400"^^xsd:integer .
+brazil:PERNAMBUCO_MUNICIPALITY_2604205 tisc:areasize "207"^^xsd:integer .
+brazil:PERNAMBUCO_MUNICIPALITY_2604908 tisc:areasize "292"^^xsd:integer .
+brazil:PERNAMBUCO_MUNICIPALITY_2614501 tisc:areasize "253"^^xsd:integer .
+brazil:PERNAMBUCO_MUNICIPALITY_2603504 tisc:areasize "54"^^xsd:integer .
+brazil:PERNAMBUCO_MUNICIPALITY_2604155 tisc:areasize "125"^^xsd:integer .
+brazil:PERNAMBUCO_MUNICIPALITY_2612000 tisc:areasize "195"^^xsd:integer .
+brazil:PERNAMBUCO_MUNICIPALITY_2616506 tisc:areasize "111"^^xsd:integer .
+brazil:PERNAMBUCO_MUNICIPALITY_2610004 tisc:areasize "337"^^xsd:integer .
+brazil:PERNAMBUCO_MUNICIPALITY_2601300 tisc:areasize "114"^^xsd:integer .
+brazil:PERNAMBUCO_MUNICIPALITY_2602209 tisc:areasize "223"^^xsd:integer .
+brazil:PERNAMBUCO_MUNICIPALITY_2608107 tisc:areasize "134"^^xsd:integer .
+brazil:PERNAMBUCO_MUNICIPALITY_2612109 tisc:areasize "89"^^xsd:integer .
+brazil:PERNAMBUCO_MUNICIPALITY_2609709 tisc:areasize "141"^^xsd:integer .
+brazil:PERNAMBUCO_MUNICIPALITY_2610509 tisc:areasize "330"^^xsd:integer .
+brazil:PERNAMBUCO_MUNICIPALITY_2606408 tisc:areasize "513"^^xsd:integer .
+brazil:PERNAMBUCO_MUNICIPALITY_2600401 tisc:areasize "543"^^xsd:integer .
+brazil:PERNAMBUCO_MUNICIPALITY_2608206 tisc:areasize "122"^^xsd:integer .
+brazil:PERNAMBUCO_MUNICIPALITY_2604809 tisc:areasize "101"^^xsd:integer .
+brazil:PERNAMBUCO_MUNICIPALITY_2600906 tisc:areasize "253"^^xsd:integer .
+brazil:PERNAMBUCO_MUNICIPALITY_2609105 tisc:areasize "57"^^xsd:integer .
+brazil:PERNAMBUCO_MUNICIPALITY_2611804 tisc:areasize "288"^^xsd:integer .
+brazil:PERNAMBUCO_MUNICIPALITY_2608909 tisc:areasize "270"^^xsd:integer .
+brazil:PERNAMBUCO_MUNICIPALITY_2604502 tisc:areasize "70"^^xsd:integer .
+brazil:PERNAMBUCO_MUNICIPALITY_2613800 tisc:areasize "110"^^xsd:integer .
+brazil:PERNAMBUCO_MUNICIPALITY_2605905 tisc:areasize "258"^^xsd:integer .
+brazil:PERNAMBUCO_MUNICIPALITY_2609006 tisc:areasize "126"^^xsd:integer .
+brazil:PERNAMBUCO_MUNICIPALITY_2611309 tisc:areasize "208"^^xsd:integer .
+brazil:PERNAMBUCO_MUNICIPALITY_2611408 tisc:areasize "110"^^xsd:integer .
+brazil:PERNAMBUCO_MUNICIPALITY_2606101 tisc:areasize "231"^^xsd:integer .
+brazil:PERNAMBUCO_MUNICIPALITY_2605400 tisc:areasize "108"^^xsd:integer .
+brazil:PERNAMBUCO_MUNICIPALITY_2601409 tisc:areasize "233"^^xsd:integer .
+brazil:PERNAMBUCO_MUNICIPALITY_2616308 tisc:areasize "191"^^xsd:integer .
+brazil:PERNAMBUCO_MUNICIPALITY_2616407 tisc:areasize "372"^^xsd:integer .
+brazil:PERNAMBUCO_MUNICIPALITY_2602704 tisc:areasize "97"^^xsd:integer .
+brazil:PERNAMBUCO_MUNICIPALITY_2615300 tisc:areasize "290"^^xsd:integer .
+brazil:PERNAMBUCO_MUNICIPALITY_2613107 tisc:areasize "382"^^xsd:integer .
+brazil:PERNAMBUCO_MUNICIPALITY_2604007 tisc:areasize "146"^^xsd:integer .
+brazil:PERNAMBUCO_MUNICIPALITY_2608453 tisc:areasize "70"^^xsd:integer .
+brazil:PERNAMBUCO_MUNICIPALITY_2611903 tisc:areasize "240"^^xsd:integer .
+brazil:PERNAMBUCO_MUNICIPALITY_2605202 tisc:areasize "347"^^xsd:integer .
+brazil:PERNAMBUCO_MUNICIPALITY_2614857 tisc:areasize "190"^^xsd:integer .
+brazil:PERNAMBUCO_MUNICIPALITY_2608503 tisc:areasize "58"^^xsd:integer .
+brazil:PERNAMBUCO_MUNICIPALITY_2603603 tisc:areasize "37"^^xsd:integer .
+brazil:PERNAMBUCO_MUNICIPALITY_2607653 tisc:areasize "304"^^xsd:integer .
+brazil:PERNAMBUCO_MUNICIPALITY_2614204 tisc:areasize "379"^^xsd:integer .
+brazil:PERNAMBUCO_MUNICIPALITY_2613404 tisc:areasize "69"^^xsd:integer .
+brazil:PERNAMBUCO_MUNICIPALITY_2609501 tisc:areasize "151"^^xsd:integer .
+brazil:PERNAMBUCO_MUNICIPALITY_2605509 tisc:areasize "92"^^xsd:integer .
+brazil:PERNAMBUCO_MUNICIPALITY_2602902 tisc:areasize "448"^^xsd:integer .
+brazil:PERNAMBUCO_MUNICIPALITY_2604403 tisc:areasize "48"^^xsd:integer .
+brazil:PERNAMBUCO_MUNICIPALITY_2607208 tisc:areasize "527"^^xsd:integer .
+brazil:PERNAMBUCO_MUNICIPALITY_2600708 tisc:areasize "273"^^xsd:integer .
+brazil:PERNAMBUCO_MUNICIPALITY_2610608 tisc:areasize "278"^^xsd:integer .
+brazil:PERNAMBUCO_MUNICIPALITY_2615508 tisc:areasize "117"^^xsd:integer .
+brazil:PERNAMBUCO_MUNICIPALITY_2609402 tisc:areasize "196"^^xsd:integer .
+brazil:PERNAMBUCO_MUNICIPALITY_2613701 tisc:areasize "264"^^xsd:integer .
+brazil:PERNAMBUCO_MUNICIPALITY_2600054 tisc:areasize "126"^^xsd:integer .
+brazil:PERNAMBUCO_MUNICIPALITY_2601052 tisc:areasize "96"^^xsd:integer .
+brazil:PERNAMBUCO_MUNICIPALITY_2604601 tisc:areasize "90"^^xsd:integer .
+brazil:PERNAMBUCO_MUNICIPALITY_2607901 tisc:areasize "256"^^xsd:integer .
+brazil:PERNAMBUCO_MUNICIPALITY_2607802 tisc:areasize "103"^^xsd:integer .
+brazil:PERNAMBUCO_MUNICIPALITY_2606804 tisc:areasize "306"^^xsd:integer .
+brazil:PERNAMBUCO_MUNICIPALITY_2606200 tisc:areasize "501"^^xsd:integer .
+brazil:PERNAMBUCO_MUNICIPALITY_2603454 tisc:areasize "55"^^xsd:integer .
+brazil:PERNAMBUCO_MUNICIPALITY_2611606 tisc:areasize "217"^^xsd:integer .
+brazil:PERNAMBUCO_MUNICIPALITY_2610707 tisc:areasize "94"^^xsd:integer .
+brazil:PERNAMBUCO_MUNICIPALITY_2607752 tisc:areasize "74"^^xsd:integer .
+brazil:PERNAMBUCO_MUNICIPALITY_2609600 tisc:areasize "44"^^xsd:integer .
+brazil:PERNAMBUCO_MUNICIPALITY_2607604 tisc:areasize "65"^^xsd:integer .
+brazil:PERNAMBUCO_MUNICIPALITY_2605459 tisc:areasize "17"^^xsd:integer .
+
+
+brazil:PERNAMBUCO_MUNICIPALITY_2600203 rdf:type dbpedia:Municipalities_of_Brazil . 
+brazil:PERNAMBUCO_MUNICIPALITY_2611101 rdf:type dbpedia:Municipalities_of_Brazil . 
+brazil:PERNAMBUCO_MUNICIPALITY_2605152 rdf:type dbpedia:Municipalities_of_Brazil . 
+brazil:PERNAMBUCO_MUNICIPALITY_2612554 rdf:type dbpedia:Municipalities_of_Brazil . 
+brazil:PERNAMBUCO_MUNICIPALITY_2601102 rdf:type dbpedia:Municipalities_of_Brazil . 
+brazil:PERNAMBUCO_MUNICIPALITY_2609907 rdf:type dbpedia:Municipalities_of_Brazil . 
+brazil:PERNAMBUCO_MUNICIPALITY_2612455 rdf:type dbpedia:Municipalities_of_Brazil . 
+brazil:PERNAMBUCO_MUNICIPALITY_2608750 rdf:type dbpedia:Municipalities_of_Brazil . 
+brazil:PERNAMBUCO_MUNICIPALITY_2607307 rdf:type dbpedia:Municipalities_of_Brazil . 
+brazil:PERNAMBUCO_MUNICIPALITY_2615607 rdf:type dbpedia:Municipalities_of_Brazil . 
+brazil:PERNAMBUCO_MUNICIPALITY_2612604 rdf:type dbpedia:Municipalities_of_Brazil . 
+brazil:PERNAMBUCO_MUNICIPALITY_2610400 rdf:type dbpedia:Municipalities_of_Brazil . 
+brazil:PERNAMBUCO_MUNICIPALITY_2602001 rdf:type dbpedia:Municipalities_of_Brazil . 
+brazil:PERNAMBUCO_MUNICIPALITY_2605301 rdf:type dbpedia:Municipalities_of_Brazil . 
+brazil:PERNAMBUCO_MUNICIPALITY_2606309 rdf:type dbpedia:Municipalities_of_Brazil . 
+brazil:PERNAMBUCO_MUNICIPALITY_2609808 rdf:type dbpedia:Municipalities_of_Brazil . 
+brazil:PERNAMBUCO_MUNICIPALITY_2614303 rdf:type dbpedia:Municipalities_of_Brazil . 
+brazil:PERNAMBUCO_MUNICIPALITY_2614006 rdf:type dbpedia:Municipalities_of_Brazil . 
+brazil:PERNAMBUCO_MUNICIPALITY_2603009 rdf:type dbpedia:Municipalities_of_Brazil . 
+brazil:PERNAMBUCO_MUNICIPALITY_2615201 rdf:type dbpedia:Municipalities_of_Brazil . 
+brazil:PERNAMBUCO_MUNICIPALITY_2612208 rdf:type dbpedia:Municipalities_of_Brazil . 
+brazil:PERNAMBUCO_MUNICIPALITY_2601607 rdf:type dbpedia:Municipalities_of_Brazil . 
+brazil:PERNAMBUCO_MUNICIPALITY_2604304 rdf:type dbpedia:Municipalities_of_Brazil . 
+brazil:PERNAMBUCO_MUNICIPALITY_2616100 rdf:type dbpedia:Municipalities_of_Brazil . 
+brazil:PERNAMBUCO_MUNICIPALITY_2613503 rdf:type dbpedia:Municipalities_of_Brazil . 
+brazil:PERNAMBUCO_MUNICIPALITY_2609303 rdf:type dbpedia:Municipalities_of_Brazil . 
+brazil:PERNAMBUCO_MUNICIPALITY_2603926 rdf:type dbpedia:Municipalities_of_Brazil . 
+brazil:PERNAMBUCO_MUNICIPALITY_2607406 rdf:type dbpedia:Municipalities_of_Brazil . 
+brazil:PERNAMBUCO_MUNICIPALITY_2605707 rdf:type dbpedia:Municipalities_of_Brazil . 
+brazil:PERNAMBUCO_MUNICIPALITY_2613909 rdf:type dbpedia:Municipalities_of_Brazil . 
+brazil:PERNAMBUCO_MUNICIPALITY_2611002 rdf:type dbpedia:Municipalities_of_Brazil . 
+brazil:PERNAMBUCO_MUNICIPALITY_2608057 rdf:type dbpedia:Municipalities_of_Brazil . 
+brazil:PERNAMBUCO_MUNICIPALITY_2614808 rdf:type dbpedia:Municipalities_of_Brazil . 
+brazil:PERNAMBUCO_MUNICIPALITY_2612471 rdf:type dbpedia:Municipalities_of_Brazil . 
+brazil:PERNAMBUCO_MUNICIPALITY_2601805 rdf:type dbpedia:Municipalities_of_Brazil . 
+brazil:PERNAMBUCO_MUNICIPALITY_2603405 rdf:type dbpedia:Municipalities_of_Brazil . 
+brazil:PERNAMBUCO_MUNICIPALITY_2615706 rdf:type dbpedia:Municipalities_of_Brazil . 
+brazil:PERNAMBUCO_MUNICIPALITY_2605608 rdf:type dbpedia:Municipalities_of_Brazil . 
+brazil:PERNAMBUCO_MUNICIPALITY_2607000 rdf:type dbpedia:Municipalities_of_Brazil . 
+brazil:PERNAMBUCO_MUNICIPALITY_2611533 rdf:type dbpedia:Municipalities_of_Brazil . 
+brazil:PERNAMBUCO_MUNICIPALITY_2606606 rdf:type dbpedia:Municipalities_of_Brazil . 
+brazil:PERNAMBUCO_MUNICIPALITY_2605103 rdf:type dbpedia:Municipalities_of_Brazil . 
+brazil:PERNAMBUCO_MUNICIPALITY_2603900 rdf:type dbpedia:Municipalities_of_Brazil . 
+brazil:PERNAMBUCO_MUNICIPALITY_2609154 rdf:type dbpedia:Municipalities_of_Brazil . 
+brazil:PERNAMBUCO_MUNICIPALITY_2614402 rdf:type dbpedia:Municipalities_of_Brazil . 
+brazil:PERNAMBUCO_MUNICIPALITY_2600104 rdf:type dbpedia:Municipalities_of_Brazil . 
+brazil:PERNAMBUCO_MUNICIPALITY_2614105 rdf:type dbpedia:Municipalities_of_Brazil . 
+brazil:PERNAMBUCO_MUNICIPALITY_2606903 rdf:type dbpedia:Municipalities_of_Brazil . 
+brazil:PERNAMBUCO_MUNICIPALITY_2614600 rdf:type dbpedia:Municipalities_of_Brazil . 
+brazil:PERNAMBUCO_MUNICIPALITY_2607505 rdf:type dbpedia:Municipalities_of_Brazil . 
+brazil:PERNAMBUCO_MUNICIPALITY_2607109 rdf:type dbpedia:Municipalities_of_Brazil . 
+brazil:PERNAMBUCO_MUNICIPALITY_2612802 rdf:type dbpedia:Municipalities_of_Brazil . 
+brazil:PERNAMBUCO_MUNICIPALITY_2613602 rdf:type dbpedia:Municipalities_of_Brazil . 
+brazil:PERNAMBUCO_MUNICIPALITY_2602506 rdf:type dbpedia:Municipalities_of_Brazil . 
+brazil:PERNAMBUCO_MUNICIPALITY_2615805 rdf:type dbpedia:Municipalities_of_Brazil . 
+brazil:PERNAMBUCO_MUNICIPALITY_2615904 rdf:type dbpedia:Municipalities_of_Brazil . 
+brazil:PERNAMBUCO_MUNICIPALITY_2602803 rdf:type dbpedia:Municipalities_of_Brazil . 
+brazil:PERNAMBUCO_MUNICIPALITY_2607703 rdf:type dbpedia:Municipalities_of_Brazil . 
+brazil:PERNAMBUCO_MUNICIPALITY_2600500 rdf:type dbpedia:Municipalities_of_Brazil . 
+brazil:PERNAMBUCO_MUNICIPALITY_2601201 rdf:type dbpedia:Municipalities_of_Brazil . 
+brazil:PERNAMBUCO_MUNICIPALITY_2606507 rdf:type dbpedia:Municipalities_of_Brazil . 
+brazil:PERNAMBUCO_MUNICIPALITY_2610806 rdf:type dbpedia:Municipalities_of_Brazil . 
+brazil:PERNAMBUCO_MUNICIPALITY_2610905 rdf:type dbpedia:Municipalities_of_Brazil . 
+brazil:PERNAMBUCO_MUNICIPALITY_2602100 rdf:type dbpedia:Municipalities_of_Brazil . 
+brazil:PERNAMBUCO_MUNICIPALITY_2616001 rdf:type dbpedia:Municipalities_of_Brazil . 
+brazil:PERNAMBUCO_MUNICIPALITY_2612307 rdf:type dbpedia:Municipalities_of_Brazil . 
+brazil:PERNAMBUCO_MUNICIPALITY_2610301 rdf:type dbpedia:Municipalities_of_Brazil . 
+brazil:PERNAMBUCO_MUNICIPALITY_2603207 rdf:type dbpedia:Municipalities_of_Brazil . 
+brazil:PERNAMBUCO_MUNICIPALITY_2600609 rdf:type dbpedia:Municipalities_of_Brazil . 
+brazil:PERNAMBUCO_MUNICIPALITY_2611200 rdf:type dbpedia:Municipalities_of_Brazil . 
+brazil:PERNAMBUCO_MUNICIPALITY_2615102 rdf:type dbpedia:Municipalities_of_Brazil . 
+brazil:PERNAMBUCO_MUNICIPALITY_2603801 rdf:type dbpedia:Municipalities_of_Brazil . 
+brazil:PERNAMBUCO_MUNICIPALITY_2608008 rdf:type dbpedia:Municipalities_of_Brazil . 
+brazil:PERNAMBUCO_MUNICIPALITY_2606002 rdf:type dbpedia:Municipalities_of_Brazil . 
+brazil:PERNAMBUCO_MUNICIPALITY_2602407 rdf:type dbpedia:Municipalities_of_Brazil . 
+brazil:PERNAMBUCO_MUNICIPALITY_2612406 rdf:type dbpedia:Municipalities_of_Brazil . 
+brazil:PERNAMBUCO_MUNICIPALITY_2613008 rdf:type dbpedia:Municipalities_of_Brazil . 
+brazil:PERNAMBUCO_MUNICIPALITY_2601706 rdf:type dbpedia:Municipalities_of_Brazil . 
+brazil:PERNAMBUCO_MUNICIPALITY_2608602 rdf:type dbpedia:Municipalities_of_Brazil . 
+brazil:PERNAMBUCO_MUNICIPALITY_2608255 rdf:type dbpedia:Municipalities_of_Brazil . 
+brazil:PERNAMBUCO_MUNICIPALITY_2604700 rdf:type dbpedia:Municipalities_of_Brazil . 
+brazil:PERNAMBUCO_MUNICIPALITY_2613206 rdf:type dbpedia:Municipalities_of_Brazil . 
+brazil:PERNAMBUCO_MUNICIPALITY_2608305 rdf:type dbpedia:Municipalities_of_Brazil . 
+brazil:PERNAMBUCO_MUNICIPALITY_2602605 rdf:type dbpedia:Municipalities_of_Brazil . 
+brazil:PERNAMBUCO_MUNICIPALITY_2612505 rdf:type dbpedia:Municipalities_of_Brazil . 
+brazil:PERNAMBUCO_MUNICIPALITY_2610103 rdf:type dbpedia:Municipalities_of_Brazil . 
+brazil:PERNAMBUCO_MUNICIPALITY_2608800 rdf:type dbpedia:Municipalities_of_Brazil . 
+brazil:PERNAMBUCO_MUNICIPALITY_2603306 rdf:type dbpedia:Municipalities_of_Brazil . 
+brazil:PERNAMBUCO_MUNICIPALITY_2601003 rdf:type dbpedia:Municipalities_of_Brazil . 
+brazil:PERNAMBUCO_MUNICIPALITY_2603108 rdf:type dbpedia:Municipalities_of_Brazil . 
+brazil:PERNAMBUCO_MUNICIPALITY_2614709 rdf:type dbpedia:Municipalities_of_Brazil . 
+brazil:PERNAMBUCO_MUNICIPALITY_2603702 rdf:type dbpedia:Municipalities_of_Brazil . 
+brazil:PERNAMBUCO_MUNICIPALITY_2606705 rdf:type dbpedia:Municipalities_of_Brazil . 
+brazil:PERNAMBUCO_MUNICIPALITY_2600807 rdf:type dbpedia:Municipalities_of_Brazil . 
+brazil:PERNAMBUCO_MUNICIPALITY_2615003 rdf:type dbpedia:Municipalities_of_Brazil . 
+brazil:PERNAMBUCO_MUNICIPALITY_2608404 rdf:type dbpedia:Municipalities_of_Brazil . 
+brazil:PERNAMBUCO_MUNICIPALITY_2610202 rdf:type dbpedia:Municipalities_of_Brazil . 
+brazil:PERNAMBUCO_MUNICIPALITY_2604106 rdf:type dbpedia:Municipalities_of_Brazil . 
+brazil:PERNAMBUCO_MUNICIPALITY_2611507 rdf:type dbpedia:Municipalities_of_Brazil . 
+brazil:PERNAMBUCO_MUNICIPALITY_2615409 rdf:type dbpedia:Municipalities_of_Brazil . 
+brazil:PERNAMBUCO_MUNICIPALITY_2616209 rdf:type dbpedia:Municipalities_of_Brazil . 
+brazil:PERNAMBUCO_MUNICIPALITY_2600302 rdf:type dbpedia:Municipalities_of_Brazil . 
+brazil:PERNAMBUCO_MUNICIPALITY_2605004 rdf:type dbpedia:Municipalities_of_Brazil . 
+brazil:PERNAMBUCO_MUNICIPALITY_2608701 rdf:type dbpedia:Municipalities_of_Brazil . 
+brazil:PERNAMBUCO_MUNICIPALITY_2612901 rdf:type dbpedia:Municipalities_of_Brazil . 
+brazil:PERNAMBUCO_MUNICIPALITY_2611705 rdf:type dbpedia:Municipalities_of_Brazil . 
+brazil:PERNAMBUCO_MUNICIPALITY_2605806 rdf:type dbpedia:Municipalities_of_Brazil . 
+brazil:PERNAMBUCO_MUNICIPALITY_2613305 rdf:type dbpedia:Municipalities_of_Brazil . 
+brazil:PERNAMBUCO_MUNICIPALITY_2601904 rdf:type dbpedia:Municipalities_of_Brazil . 
+brazil:PERNAMBUCO_MUNICIPALITY_2612703 rdf:type dbpedia:Municipalities_of_Brazil . 
+brazil:PERNAMBUCO_MUNICIPALITY_2607950 rdf:type dbpedia:Municipalities_of_Brazil . 
+brazil:PERNAMBUCO_MUNICIPALITY_2609204 rdf:type dbpedia:Municipalities_of_Brazil . 
+brazil:PERNAMBUCO_MUNICIPALITY_2601508 rdf:type dbpedia:Municipalities_of_Brazil . 
+brazil:PERNAMBUCO_MUNICIPALITY_2616183 rdf:type dbpedia:Municipalities_of_Brazil . 
+brazil:PERNAMBUCO_MUNICIPALITY_2602308 rdf:type dbpedia:Municipalities_of_Brazil . 
+brazil:PERNAMBUCO_MUNICIPALITY_2604205 rdf:type dbpedia:Municipalities_of_Brazil . 
+brazil:PERNAMBUCO_MUNICIPALITY_2604908 rdf:type dbpedia:Municipalities_of_Brazil . 
+brazil:PERNAMBUCO_MUNICIPALITY_2614501 rdf:type dbpedia:Municipalities_of_Brazil . 
+brazil:PERNAMBUCO_MUNICIPALITY_2603504 rdf:type dbpedia:Municipalities_of_Brazil . 
+brazil:PERNAMBUCO_MUNICIPALITY_2604155 rdf:type dbpedia:Municipalities_of_Brazil . 
+brazil:PERNAMBUCO_MUNICIPALITY_2612000 rdf:type dbpedia:Municipalities_of_Brazil . 
+brazil:PERNAMBUCO_MUNICIPALITY_2616506 rdf:type dbpedia:Municipalities_of_Brazil . 
+brazil:PERNAMBUCO_MUNICIPALITY_2610004 rdf:type dbpedia:Municipalities_of_Brazil . 
+brazil:PERNAMBUCO_MUNICIPALITY_2601300 rdf:type dbpedia:Municipalities_of_Brazil . 
+brazil:PERNAMBUCO_MUNICIPALITY_2602209 rdf:type dbpedia:Municipalities_of_Brazil . 
+brazil:PERNAMBUCO_MUNICIPALITY_2608107 rdf:type dbpedia:Municipalities_of_Brazil . 
+brazil:PERNAMBUCO_MUNICIPALITY_2612109 rdf:type dbpedia:Municipalities_of_Brazil . 
+brazil:PERNAMBUCO_MUNICIPALITY_2609709 rdf:type dbpedia:Municipalities_of_Brazil . 
+brazil:PERNAMBUCO_MUNICIPALITY_2610509 rdf:type dbpedia:Municipalities_of_Brazil . 
+brazil:PERNAMBUCO_MUNICIPALITY_2606408 rdf:type dbpedia:Municipalities_of_Brazil . 
+brazil:PERNAMBUCO_MUNICIPALITY_2600401 rdf:type dbpedia:Municipalities_of_Brazil . 
+brazil:PERNAMBUCO_MUNICIPALITY_2608206 rdf:type dbpedia:Municipalities_of_Brazil . 
+brazil:PERNAMBUCO_MUNICIPALITY_2604809 rdf:type dbpedia:Municipalities_of_Brazil . 
+brazil:PERNAMBUCO_MUNICIPALITY_2600906 rdf:type dbpedia:Municipalities_of_Brazil . 
+brazil:PERNAMBUCO_MUNICIPALITY_2609105 rdf:type dbpedia:Municipalities_of_Brazil . 
+brazil:PERNAMBUCO_MUNICIPALITY_2611804 rdf:type dbpedia:Municipalities_of_Brazil . 
+brazil:PERNAMBUCO_MUNICIPALITY_2608909 rdf:type dbpedia:Municipalities_of_Brazil . 
+brazil:PERNAMBUCO_MUNICIPALITY_2604502 rdf:type dbpedia:Municipalities_of_Brazil . 
+brazil:PERNAMBUCO_MUNICIPALITY_2613800 rdf:type dbpedia:Municipalities_of_Brazil . 
+brazil:PERNAMBUCO_MUNICIPALITY_2605905 rdf:type dbpedia:Municipalities_of_Brazil . 
+brazil:PERNAMBUCO_MUNICIPALITY_2609006 rdf:type dbpedia:Municipalities_of_Brazil . 
+brazil:PERNAMBUCO_MUNICIPALITY_2611309 rdf:type dbpedia:Municipalities_of_Brazil . 
+brazil:PERNAMBUCO_MUNICIPALITY_2611408 rdf:type dbpedia:Municipalities_of_Brazil . 
+brazil:PERNAMBUCO_MUNICIPALITY_2606101 rdf:type dbpedia:Municipalities_of_Brazil . 
+brazil:PERNAMBUCO_MUNICIPALITY_2605400 rdf:type dbpedia:Municipalities_of_Brazil . 
+brazil:PERNAMBUCO_MUNICIPALITY_2601409 rdf:type dbpedia:Municipalities_of_Brazil . 
+brazil:PERNAMBUCO_MUNICIPALITY_2616308 rdf:type dbpedia:Municipalities_of_Brazil . 
+brazil:PERNAMBUCO_MUNICIPALITY_2616407 rdf:type dbpedia:Municipalities_of_Brazil . 
+brazil:PERNAMBUCO_MUNICIPALITY_2602704 rdf:type dbpedia:Municipalities_of_Brazil . 
+brazil:PERNAMBUCO_MUNICIPALITY_2615300 rdf:type dbpedia:Municipalities_of_Brazil . 
+brazil:PERNAMBUCO_MUNICIPALITY_2613107 rdf:type dbpedia:Municipalities_of_Brazil . 
+brazil:PERNAMBUCO_MUNICIPALITY_2604007 rdf:type dbpedia:Municipalities_of_Brazil . 
+brazil:PERNAMBUCO_MUNICIPALITY_2608453 rdf:type dbpedia:Municipalities_of_Brazil . 
+brazil:PERNAMBUCO_MUNICIPALITY_2611903 rdf:type dbpedia:Municipalities_of_Brazil . 
+brazil:PERNAMBUCO_MUNICIPALITY_2605202 rdf:type dbpedia:Municipalities_of_Brazil . 
+brazil:PERNAMBUCO_MUNICIPALITY_2614857 rdf:type dbpedia:Municipalities_of_Brazil . 
+brazil:PERNAMBUCO_MUNICIPALITY_2608503 rdf:type dbpedia:Municipalities_of_Brazil . 
+brazil:PERNAMBUCO_MUNICIPALITY_2603603 rdf:type dbpedia:Municipalities_of_Brazil . 
+brazil:PERNAMBUCO_MUNICIPALITY_2607653 rdf:type dbpedia:Municipalities_of_Brazil . 
+brazil:PERNAMBUCO_MUNICIPALITY_2614204 rdf:type dbpedia:Municipalities_of_Brazil . 
+brazil:PERNAMBUCO_MUNICIPALITY_2613404 rdf:type dbpedia:Municipalities_of_Brazil . 
+brazil:PERNAMBUCO_MUNICIPALITY_2609501 rdf:type dbpedia:Municipalities_of_Brazil . 
+brazil:PERNAMBUCO_MUNICIPALITY_2605509 rdf:type dbpedia:Municipalities_of_Brazil . 
+brazil:PERNAMBUCO_MUNICIPALITY_2602902 rdf:type dbpedia:Municipalities_of_Brazil . 
+brazil:PERNAMBUCO_MUNICIPALITY_2604403 rdf:type dbpedia:Municipalities_of_Brazil . 
+brazil:PERNAMBUCO_MUNICIPALITY_2607208 rdf:type dbpedia:Municipalities_of_Brazil . 
+brazil:PERNAMBUCO_MUNICIPALITY_2600708 rdf:type dbpedia:Municipalities_of_Brazil . 
+brazil:PERNAMBUCO_MUNICIPALITY_2610608 rdf:type dbpedia:Municipalities_of_Brazil . 
+brazil:PERNAMBUCO_MUNICIPALITY_2615508 rdf:type dbpedia:Municipalities_of_Brazil . 
+brazil:PERNAMBUCO_MUNICIPALITY_2609402 rdf:type dbpedia:Municipalities_of_Brazil . 
+brazil:PERNAMBUCO_MUNICIPALITY_2613701 rdf:type dbpedia:Municipalities_of_Brazil . 
+brazil:PERNAMBUCO_MUNICIPALITY_2600054 rdf:type dbpedia:Municipalities_of_Brazil . 
+brazil:PERNAMBUCO_MUNICIPALITY_2601052 rdf:type dbpedia:Municipalities_of_Brazil . 
+brazil:PERNAMBUCO_MUNICIPALITY_2604601 rdf:type dbpedia:Municipalities_of_Brazil . 
+brazil:PERNAMBUCO_MUNICIPALITY_2607901 rdf:type dbpedia:Municipalities_of_Brazil . 
+brazil:PERNAMBUCO_MUNICIPALITY_2607802 rdf:type dbpedia:Municipalities_of_Brazil . 
+brazil:PERNAMBUCO_MUNICIPALITY_2606804 rdf:type dbpedia:Municipalities_of_Brazil . 
+brazil:PERNAMBUCO_MUNICIPALITY_2606200 rdf:type dbpedia:Municipalities_of_Brazil . 
+brazil:PERNAMBUCO_MUNICIPALITY_2603454 rdf:type dbpedia:Municipalities_of_Brazil . 
+brazil:PERNAMBUCO_MUNICIPALITY_2611606 rdf:type dbpedia:Municipalities_of_Brazil . 
+brazil:PERNAMBUCO_MUNICIPALITY_2610707 rdf:type dbpedia:Municipalities_of_Brazil . 
+brazil:PERNAMBUCO_MUNICIPALITY_2607752 rdf:type dbpedia:Municipalities_of_Brazil . 
+brazil:PERNAMBUCO_MUNICIPALITY_2609600 rdf:type dbpedia:Municipalities_of_Brazil . 
+brazil:PERNAMBUCO_MUNICIPALITY_2607604 rdf:type dbpedia:Municipalities_of_Brazil . 
+brazil:PERNAMBUCO_MUNICIPALITY_2605459 rdf:type dbpedia:Municipalities_of_Brazil . 
+
