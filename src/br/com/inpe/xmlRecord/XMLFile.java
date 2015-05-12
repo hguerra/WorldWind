@@ -1,4 +1,4 @@
-package br.com.inpe.xmlgeometryrecord;
+package br.com.inpe.xmlRecord;
 
 import java.beans.XMLDecoder;
 import java.beans.XMLEncoder;
@@ -7,6 +7,8 @@ import java.io.BufferedOutputStream;
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
 import java.util.List;
+
+import br.com.inpe.xmlgeometryrecord.GeometryRecord;
 
 public class XMLFile {
 	public static void write(GeometryRecord object, String filename)

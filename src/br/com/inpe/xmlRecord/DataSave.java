@@ -1,4 +1,4 @@
-package br.com.inpe.xmlgeometryrecord;
+package br.com.inpe.xmlRecord;
 
 import java.io.File;
 import java.io.FileInputStream;
@@ -6,6 +6,9 @@ import java.io.FileNotFoundException;
 import java.io.InputStream;
 import java.util.LinkedList;
 import java.util.List;
+
+import br.com.inpe.xmlgeometryrecord.GeometryRecord;
+
 import com.hp.hpl.jena.query.ARQ;
 import com.hp.hpl.jena.query.Query;
 import com.hp.hpl.jena.query.QueryExecution;
@@ -16,14 +19,14 @@ import com.hp.hpl.jena.query.ResultSet;
 import com.hp.hpl.jena.rdf.model.Model;
 import com.hp.hpl.jena.rdf.model.ModelFactory;
 
-public class DataLoader {
+public class DataSave {
 
 	public static void main(String[] args) throws Exception {
 		/*
 		 * ../WorldWind/xmldata/data.xml
 		 */
 		String filename = "../WorldWind/xmldata/data.xml";
-		DataLoader lodDataset = new DataLoader();
+		DataSave lodDataset = new DataSave();
 		List<GeometryRecord> temp = lodDataset.queryStates();
 		XMLFile.writeList(temp, filename);
 		System.out.println("Size: " + temp.size());

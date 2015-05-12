@@ -9,8 +9,8 @@ import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
 
+import br.com.inpe.xmlRecord.XMLFile;
 import br.com.inpe.xmlgeometryrecord.GeometryRecord;
-import br.com.inpe.xmlgeometryrecord.XMLFile;
 
 public class XMLFileTest {
 	private int geometryRecordsSize;
