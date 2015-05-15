@@ -17,7 +17,7 @@ local.properties
 .settings/
 bin/
 tmp/
-#lib/
+lib/
 
 
 # Eclipse Core
