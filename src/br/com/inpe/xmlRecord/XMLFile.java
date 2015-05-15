@@ -8,7 +8,7 @@ import java.io.FileInputStream;
 import java.io.FileOutputStream;
 import java.util.List;
 
-import br.com.inpe.xmlgeometryrecord.GeometryRecord;
+import br.com.inpe.worldwind.database.GeometryRecord;
 
 public class XMLFile {
 	public static void write(GeometryRecord object, String filename)

@@ -1,4 +1,4 @@
-package br.com.inpe.xmlgeometryrecordtest;
+package br.com.inpe.xmlgeometryrecordTest;
 
 import static org.junit.Assert.*;
 
@@ -9,8 +9,8 @@ import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
 
+import br.com.inpe.worldwind.database.GeometryRecord;
 import br.com.inpe.xmlRecord.XMLFile;
-import br.com.inpe.xmlgeometryrecord.GeometryRecord;
 
 public class XMLFileTest {
 	private int geometryRecordsSize;

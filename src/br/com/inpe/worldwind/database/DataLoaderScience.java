@@ -1,4 +1,4 @@
-package br.com.inpe.xmlgeometryrecord;
+package br.com.inpe.worldwind.database;
 
 import java.util.LinkedList;
 import java.util.List;
@@ -32,36 +32,84 @@ public class DataLoaderScience {
 		dataBase.store(geometryRecord);
 	}
 
-	public ObjectSet SearchData(String parameter) {
+	public List<GeometryRecord> SearchDataMunicipalityName(String parameter) {
 		Query query = dataBase.query();
-		ObjectSet result;
-
-		if (!numberCheck(parameter)) {
-			query.descend("municipalityName").constrain(parameter)
-					.or(query.descend("geometry").constrain(parameter));
-			result = query.execute();
-			return result;
+		query.constrain(GeometryRecord.class);
+		ObjectSet<GeometryRecord> queryList = query.execute();
+		List<GeometryRecord> result = new LinkedList<GeometryRecord>();
+		for (GeometryRecord geo : queryList) {
+			if (geo.matchesMunicipalityName(parameter))
+				result.add(geo);
 		}
-		query.descend("municipalityArea").constrain(parameter);
-		result = query.execute();
 		return result;
 	}
 
-	public void remevoData(String parameter) {
-		ObjectSet result = SearchData(parameter);
-		if (!result.isEmpty()) {
-			GeometryRecord data = (GeometryRecord) result.next();
-			dataBase.delete(data);
+	public List<GeometryRecord> SearchDataMunicipalityArea(long parameter) {
+		Query query = dataBase.query();
+		query.constrain(GeometryRecord.class);
+		ObjectSet<GeometryRecord> queryList = query.execute();
+		List<GeometryRecord> result = new LinkedList<GeometryRecord>();
+		for (GeometryRecord geo : queryList) {
+			if (geo.matchesMunicipalityArea(parameter))
+				result.add(geo);
 		}
-
+		return result;
+	}
+	
+	public List<GeometryRecord> SearchDataBiggestMunicipalityArea(long parameter) {
+		Query query = dataBase.query();
+		query.constrain(GeometryRecord.class);
+		ObjectSet<GeometryRecord> queryList = query.execute();
+		List<GeometryRecord> result = new LinkedList<GeometryRecord>();
+		for (GeometryRecord geo : queryList) {
+			if (geo.matchesBiggestMunicipalityArea(parameter))
+				result.add(geo);
+		}
+		return result;
+	}
+	
+	public List<GeometryRecord> SearchDataSmallestMunicipalityArea(long parameter) {
+		Query query = dataBase.query();
+		query.constrain(GeometryRecord.class);
+		ObjectSet<GeometryRecord> queryList = query.execute();
+		List<GeometryRecord> result = new LinkedList<GeometryRecord>();
+		for (GeometryRecord geo : queryList) {
+			if (geo.matchesSmallestMunicipalityArea(parameter))
+				result.add(geo);
+		}
+		return result;
 	}
 
-	public boolean numberCheck(String parameter) {
-		try {
-			Integer.parseInt(parameter);
-			return true;
-		} catch (Exception e) {
-			return false;
+	public List<GeometryRecord> SearchDataGeometry(String parameter) {
+		Query query = dataBase.query();
+		query.constrain(GeometryRecord.class);
+		ObjectSet<GeometryRecord> queryList = query.execute();
+		List<GeometryRecord> result = new LinkedList<GeometryRecord>();
+		for (GeometryRecord geo : queryList) {
+			if (geo.matchesGeometry(parameter))
+				result.add(geo);
+		}
+		return result;
+	}
+
+	public void remevoDataMunicipalityName(String parameter) {
+		List<GeometryRecord> result = SearchDataMunicipalityName(parameter);
+		for (GeometryRecord geo : result) {
+			dataBase.delete(geo);
+		}
+	}
+
+	public void removeDataMunicipalityArea(long parameter) {
+		List<GeometryRecord> result = SearchDataMunicipalityArea(parameter);
+		for (GeometryRecord geo : result) {
+			dataBase.delete(geo);
+		}
+	}
+
+	public void removeSearchDataGeometry(String parameter) {
+		List<GeometryRecord> result = SearchDataGeometry(parameter);
+		for (GeometryRecord geo : result) {
+			dataBase.delete(geo);
 		}
 	}
 }

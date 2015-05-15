@@ -1,4 +1,4 @@
-package br.com.inpe.xmlgeometryrecordTest;
+package br.com.inpe.worldwind.databaseTest;
 
 import static org.junit.Assert.*;
 
@@ -9,9 +9,10 @@ import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
 
+import br.com.inpe.worldwind.database.DataLoaderScience;
+import br.com.inpe.worldwind.database.GeometryRecord;
 import br.com.inpe.xmlRecord.XMLFile;
-import br.com.inpe.xmlgeometryrecord.DataLoaderScience;
-import br.com.inpe.xmlgeometryrecord.GeometryRecord;
+
 import com.db4o.ObjectSet;
 	
 public class DataLoaderScienceTest {
@@ -25,6 +26,7 @@ public class DataLoaderScienceTest {
 		geometryRecords = new LinkedList<GeometryRecord>();
 	}
 	/*
+	 //AO RODAR ESSE TEST ELE ADICIONA NOVAMENTE OS DADOS NO BANCO.
 	@Test
 	public void addDataTest(){
 		try {
@@ -38,17 +40,36 @@ public class DataLoaderScienceTest {
 	}
 	*/
 	@Test
-	public void SearchDataTest(){
-		//Terminar
-		ObjectSet atual = data.SearchData("Abreu e Lima");
-		
-		
+	public void SearchDataMunicipalityNameTest(){
+		String name = "Abreu e Lima";
+		geometryRecords = data.SearchDataMunicipalityName(name);
+		assertEquals(name, geometryRecords.get(0).getMunicipalityName());
 	}
 	@Test
-	public void numberCheckTest(){
-		String parameter = "10";
-		assertEquals(true, data.numberCheck(parameter));
+	public void SearchDataMunicipalityAreaTest(){
+		long area = 126;
+		geometryRecords = data.SearchDataMunicipalityArea(area);
+		assertEquals(area, geometryRecords.get(0).getMunicipalityArea());
+
 	}
+	@Test
+	public void SearchDataBiggestMunicipalityAreaTest(){
+		long area = 0;
+		long size = 185;
+		geometryRecords = data.SearchDataBiggestMunicipalityArea(area);
+		assertEquals(size, geometryRecords.size());
+	}
+	
+	@Test
+	public void SearchDataSmallestMunicipalityAreaTest(){
+		long area = 100;
+		long size = 23;
+		geometryRecords = data.SearchDataSmallestMunicipalityArea(area);
+		assertEquals(size, geometryRecords.size());
+		
+	}
+	
+
 	@After
 	public void end(){
 		data = null;

@@ -7,7 +7,7 @@ import java.io.InputStream;
 import java.util.LinkedList;
 import java.util.List;
 
-import br.com.inpe.xmlgeometryrecord.GeometryRecord;
+import br.com.inpe.worldwind.database.GeometryRecord;
 
 import com.hp.hpl.jena.query.ARQ;
 import com.hp.hpl.jena.query.Query;

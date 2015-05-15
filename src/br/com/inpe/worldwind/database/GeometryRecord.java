@@ -1,11 +1,11 @@
-package br.com.inpe.xmlgeometryrecord;
+package br.com.inpe.worldwind.database;
+
 import java.io.Serializable;
 
-public class GeometryRecord implements Serializable{
+public class GeometryRecord implements Serializable {
 	private String municipalityName;
 	private long municipalityArea;
 	private String geometry;
-
 
 	public GeometryRecord(String municipalityName, long municipalityArea,
 			String geometry) {
@@ -14,10 +14,40 @@ public class GeometryRecord implements Serializable{
 		this.municipalityArea = municipalityArea;
 		this.geometry = geometry;
 	}
-	public GeometryRecord(){
-		
+
+	public GeometryRecord() {
+
 	}
 
+	public boolean matchesMunicipalityName(String parameter) {
+		if (parameter.equals(getMunicipalityName()))
+			return true;
+		return false;
+	}
+
+	public boolean matchesMunicipalityArea(long parameter) {
+		if (parameter == getMunicipalityArea())
+			return true;
+		return false;
+	}
+	
+	public boolean matchesBiggestMunicipalityArea(long parameter) {
+		if (parameter < getMunicipalityArea())
+			return true;
+		return false;
+	}
+	
+	public boolean matchesSmallestMunicipalityArea(long parameter) {
+		if (parameter > getMunicipalityArea())
+			return true;
+		return false;
+	}
+
+	public boolean matchesGeometry(String parameter) {
+		if (parameter.equals(getGeometry()))
+			return true;
+		return false;
+	}
 
 	public String getMunicipalityName() {
 		return municipalityName;
