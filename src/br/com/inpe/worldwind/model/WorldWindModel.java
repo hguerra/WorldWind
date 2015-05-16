@@ -1,53 +1,21 @@
 package br.com.inpe.worldwind.model;
 
-import gov.nasa.worldwind.avlist.AVKey;
-import gov.nasa.worldwind.geom.*;
-import gov.nasa.worldwind.layers.RenderableLayer;
-import gov.nasa.worldwind.render.*;
 
 import java.util.LinkedList;
 import java.util.List;
-
 import br.com.inpe.worldwind.database.DataLoaderScience;
 import br.com.inpe.worldwind.database.GeometryRecord;
 import br.com.inpe.worldwind.view.Observer;
 
-public class WorldWind implements Subject{
-	private List<GeometryRecord> geometryRecord;
+public class WorldWindModel implements Subject {
+	List<GeometryRecord> geometryRecord;
 	private List<Observer> observers;
 	static DataLoaderScience data;
 
-	public WorldWind() {
+	public WorldWindModel() {
 		data = DataLoaderScience.getInstance();
 		geometryRecord = new LinkedList<GeometryRecord>();
 		observers = new LinkedList<Observer>();
-	}
-
-	
-	public void createShapeGreaterMunicipalityArea(long area) {
-		//Teste
-		final long a = area;
-		new Thread(new Runnable() {
-			@Override
-			public void run() {
-				geometryRecord = data.SearchDataBiggestMunicipalityArea(a);
-				RenderableLayer layer = getLayer(geometryRecord);
-				notifyObserverLayer(layer);
-			}
-		}).start();
-		//
-		//geometryRecord = data.SearchDataBiggestMunicipalityArea(area);
-		//notifyObserverLayer(getLayer(geometryRecord));
-	}
-
-	public void createShapeEqualsMunicipalityArea(long area) {
-		geometryRecord = data.SearchDataMunicipalityArea(area);
-		notifyObserverLayer(getLayer(geometryRecord));
-	}
-
-	public void createShapeLessMunicipalityArea(long area) {
-		geometryRecord = data.SearchDataSmallestMunicipalityArea(area);
-		notifyObserverLayer(getLayer(geometryRecord));
 	}
 
 	@Override
@@ -56,57 +24,45 @@ public class WorldWind implements Subject{
 	}
 
 	@Override
-	public void notifyObserverLayer(RenderableLayer layer) {
+	public void notifyObserverGeometryRecord(List<GeometryRecord> geometryRecord) {
 		for (Observer o : observers) {
-			o.updateMaterial(layer);
+			o.updateGeometryRecordLayer(geometryRecord);
 		}
+		geometryRecord.clear();
 	}
 
-	public RenderableLayer getLayer(List<GeometryRecord> geometryRecord) {
-		RenderableLayer layer = new RenderableLayer();
-		for (int i = 0; i < geometryRecord.size(); i++) {
-			List<Position> borderPositions = new LinkedList<Position>();
-			String latlong[] = geometryRecord.get(i).getGeometry().split(";");
-
-			long area = geometryRecord.get(i).getMunicipalityArea();
-
-			for (String str : latlong) {
-				String latlong2[] = str.split(",");
-				borderPositions.add(Position.fromDegrees(
-						Double.parseDouble(latlong2[1]),
-						Double.parseDouble(latlong2[0]), 1e4));
+	public void createShapeGreaterMunicipalityArea(long area) {
+		final long parameter = area;
+		new Thread(new Runnable() {
+			@Override
+			public void run() {
+				geometryRecord = data
+						.SearchDataGreaterMunicipalityArea(parameter);
+				notifyObserverGeometryRecord(geometryRecord);
 			}
-
-			Polygon polygon = new Polygon(borderPositions);
-
-			ShapeAttributes sideAttributes = new BasicShapeAttributes();
-
-			InteriorMaterial.setColorMaterial(area, sideAttributes);
-
-			polygon.setAttributes(sideAttributes);
-			polygon.setValue(AVKey.DISPLAY_NAME, geometryRecord.get(i)
-					.getMunicipalityName()
-					+ " - "
-					+ geometryRecord.get(i).getMunicipalityArea() + "km");
-
-			layer.addRenderable(polygon);
-		}
-		return layer;
+		}).start();
 	}
 
-	@Override
-	public void notifyObserverData() {
-		// TODO Auto-generated method stub
-
+	public void createShapeEqualsMunicipalityArea(long area) {
+		final long parameter = area;
+		new Thread(new Runnable() {
+			@Override
+			public void run() {
+				geometryRecord = data.SearchDataEqualsMunicipalityArea(parameter);
+				notifyObserverGeometryRecord(geometryRecord);
+			}
+		}).start();
 	}
 
-	@Override
-	public void notifyObserverTime() {
-		// TODO Auto-generated method stub
-
+	public void createShapeLessMunicipalityArea(long area) {
+		final long parameter = area;
+		new Thread(new Runnable() {
+			@Override
+			public void run() {
+				geometryRecord = data
+						.SearchDataLessMunicipalityArea(parameter);
+				notifyObserverGeometryRecord(geometryRecord);
+			}
+		}).start();
 	}
-	/**
-	 * Teste
-	 */
-
 }

@@ -9,13 +9,11 @@ import com.db4o.ObjectSet;
 import com.db4o.query.Query;
 
 public class DataLoaderScience {
-	private List<GeometryRecord> geometryRecords;
 	private ObjectContainer dataBase;
 	// Singleton
 	private static DataLoaderScience uniqueInstance;
 
 	private DataLoaderScience() {
-		geometryRecords = new LinkedList<GeometryRecord>();
 		dataBase = Db4oEmbedded.openFile(Db4oEmbedded.newConfiguration(),
 				"../WorldWind/database/data.db4o");
 	}
@@ -44,7 +42,7 @@ public class DataLoaderScience {
 		return result;
 	}
 
-	public List<GeometryRecord> SearchDataMunicipalityArea(long parameter) {
+	public List<GeometryRecord> SearchDataEqualsMunicipalityArea(long parameter) {
 		Query query = dataBase.query();
 		query.constrain(GeometryRecord.class);
 		ObjectSet<GeometryRecord> queryList = query.execute();
@@ -55,8 +53,8 @@ public class DataLoaderScience {
 		}
 		return result;
 	}
-	
-	public List<GeometryRecord> SearchDataBiggestMunicipalityArea(long parameter) {
+
+	public List<GeometryRecord> SearchDataGreaterMunicipalityArea(long parameter) {
 		Query query = dataBase.query();
 		query.constrain(GeometryRecord.class);
 		ObjectSet<GeometryRecord> queryList = query.execute();
@@ -67,8 +65,8 @@ public class DataLoaderScience {
 		}
 		return result;
 	}
-	
-	public List<GeometryRecord> SearchDataSmallestMunicipalityArea(long parameter) {
+
+	public List<GeometryRecord> SearchDataLessMunicipalityArea(long parameter) {
 		Query query = dataBase.query();
 		query.constrain(GeometryRecord.class);
 		ObjectSet<GeometryRecord> queryList = query.execute();
@@ -100,7 +98,7 @@ public class DataLoaderScience {
 	}
 
 	public void removeDataMunicipalityArea(long parameter) {
-		List<GeometryRecord> result = SearchDataMunicipalityArea(parameter);
+		List<GeometryRecord> result = SearchDataEqualsMunicipalityArea(parameter);
 		for (GeometryRecord geo : result) {
 			dataBase.delete(geo);
 		}

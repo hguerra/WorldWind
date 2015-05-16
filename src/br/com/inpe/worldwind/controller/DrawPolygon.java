@@ -1,11 +1,33 @@
 package br.com.inpe.worldwind.controller;
 
-public class DrawPolygon implements IDraw{
+import br.com.inpe.worldwind.model.WorldWindModel;
+import br.com.inpe.worldwind.view.WorldWindView;
+
+public class DrawPolygon implements IDraw {
+	private WorldWindModel model;
+	private WorldWindView view;
+
+	public DrawPolygon(WorldWindModel model, WorldWindView view) {
+		super();
+		this.model = model;
+		this.view = view;
+	}
 
 	@Override
-	public void draw() {
-		// TODO Auto-generated method stub
+	public void drawShapeGreaterMunicipalityArea(long area) {
+		model.createShapeGreaterMunicipalityArea(area);
 		
 	}
 
+	@Override
+	public void ShapeEqualsMunicipalityArea(long area) {
+		model.createShapeEqualsMunicipalityArea(area);
+		
+	}
+
+	@Override
+	public void ShapeLessMunicipalityArea(long area) {
+		model.createShapeLessMunicipalityArea(area);
+		
+	}
 }

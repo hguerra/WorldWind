@@ -26,7 +26,7 @@ public class PlotGeometries extends ApplicationTemplate {
 			data = DataLoaderScience.getInstance();
 
 			List<GeometryRecord> geometryRecord = data
-					.SearchDataBiggestMunicipalityArea(0);
+					.SearchDataGreaterMunicipalityArea(0);
 
 			for (int i = 0; i < geometryRecord.size(); i++) {
 

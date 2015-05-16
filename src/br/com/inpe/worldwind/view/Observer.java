@@ -1,11 +1,9 @@
 package br.com.inpe.worldwind.view;
 
+import java.util.List;
+
 import gov.nasa.worldwind.layers.RenderableLayer;
-
+import br.com.inpe.worldwind.database.GeometryRecord;
 public interface Observer {
-	public void updateMaterial(RenderableLayer layer);
-	public void updateData();
-	public void updateTime();
-	public void updateBorderPosition();
-
+	public void updateGeometryRecordLayer(List<GeometryRecord> geometryRecord);
 }

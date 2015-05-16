@@ -48,7 +48,7 @@ public class DataLoaderScienceTest {
 	@Test
 	public void SearchDataMunicipalityAreaTest(){
 		long area = 126;
-		geometryRecords = data.SearchDataMunicipalityArea(area);
+		geometryRecords = data.SearchDataEqualsMunicipalityArea(area);
 		assertEquals(area, geometryRecords.get(0).getMunicipalityArea());
 
 	}
@@ -56,7 +56,7 @@ public class DataLoaderScienceTest {
 	public void SearchDataBiggestMunicipalityAreaTest(){
 		long area = 0;
 		long size = 185;
-		geometryRecords = data.SearchDataBiggestMunicipalityArea(area);
+		geometryRecords = data.SearchDataGreaterMunicipalityArea(area);
 		assertEquals(size, geometryRecords.size());
 	}
 	
@@ -64,7 +64,7 @@ public class DataLoaderScienceTest {
 	public void SearchDataSmallestMunicipalityAreaTest(){
 		long area = 100;
 		long size = 23;
-		geometryRecords = data.SearchDataSmallestMunicipalityArea(area);
+		geometryRecords = data.SearchDataLessMunicipalityArea(area);
 		assertEquals(size, geometryRecords.size());
 		
 	}

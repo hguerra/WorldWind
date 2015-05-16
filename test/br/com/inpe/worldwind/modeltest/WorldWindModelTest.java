@@ -10,17 +10,17 @@ import org.junit.Before;
 import org.junit.Test;
 import br.com.inpe.worldwind.database.DataLoaderScience;
 import br.com.inpe.worldwind.database.GeometryRecord;
-import br.com.inpe.worldwind.model.WorldWind;
+import br.com.inpe.worldwind.model.WorldWindModel;
 
 
-public class WorldWindTest {
-	private WorldWind world;
+public class WorldWindModelTest {
+	private WorldWindModel world;
 	private List<GeometryRecord> geometryRecord;
 	static DataLoaderScience data;
 
 	@Before
 	public void start() {
-		world = new WorldWind();
+		world = new WorldWindModel();
 		data = DataLoaderScience.getInstance();
 		geometryRecord = new LinkedList<GeometryRecord>();
 	}
@@ -29,13 +29,9 @@ public class WorldWindTest {
 	public void createShapeGreaterMunicipalityAreaTest() {
 		long area = 0;
 		int municipalities = 185;
-		geometryRecord = data.SearchDataBiggestMunicipalityArea(area);
-		RenderableLayer actual = world.getLayer(geometryRecord);
-		Assert.assertEquals(municipalities, actual.getNumRenderables());
+		geometryRecord = data.SearchDataGreaterMunicipalityArea(area);
+		Assert.assertEquals(municipalities, geometryRecord.size());
 	}
-
-
-
 	@After
 	public void end() {
 		world = null;
