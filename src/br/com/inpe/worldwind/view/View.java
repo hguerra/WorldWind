@@ -1,12 +1,9 @@
 package br.com.inpe.worldwind.view;
 
 import gov.nasa.worldwind.BasicModel;
-import gov.nasa.worldwind.Configuration;
 import gov.nasa.worldwind.WorldWindow;
-import gov.nasa.worldwind.avlist.AVKey;
 import gov.nasa.worldwind.awt.WorldWindowGLCanvas;
 import gov.nasa.worldwind.layers.CompassLayer;
-import gov.nasa.worldwind.layers.LatLonGraticuleLayer;
 import gov.nasa.worldwind.layers.Layer;
 import gov.nasa.worldwind.layers.LayerList;
 import gov.nasa.worldwind.layers.RenderableLayer;
@@ -17,7 +14,7 @@ import javax.swing.*;
 
 import br.com.inpe.worldwind.controller.IDraw;
 
-public class View extends JFrame implements Observer{
+public class View extends JFrame implements Observer {
 	private WorldWindowGLCanvas wwd;
 	private IDraw drawPolygon;
 	private RenderableLayer layer;
@@ -29,10 +26,10 @@ public class View extends JFrame implements Observer{
 		this.getContentPane().add(wwd, java.awt.BorderLayout.CENTER);
 		wwd.setModel(new BasicModel());
 		this.wwd.getModel().getGlobe()
-		.setElevationModel(new ZeroElevationModel());
-		
+				.setElevationModel(new ZeroElevationModel());
+
 		panel = new LayerPanel(this.wwd);
-		
+
 		insertBeforeCompass(this.wwd, getLayer());
 		panel.update(this.wwd);
 	}
@@ -45,22 +42,21 @@ public class View extends JFrame implements Observer{
 	@Override
 	public void updateData() {
 		// TODO Auto-generated method stub
-		
+
 	}
 
 	@Override
 	public void updateTime() {
 		// TODO Auto-generated method stub
-		
+
 	}
 
 	@Override
 	public void updateBorderPosition() {
 		// TODO Auto-generated method stub
-		
+
 	}
-	
-	
+
 	public RenderableLayer getLayer() {
 		return layer;
 	}
@@ -101,4 +97,5 @@ public class View extends JFrame implements Observer{
 		}
 		layers.add(compassPosition - 1, layer);
 	}
+
 }

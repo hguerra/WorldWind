@@ -4,13 +4,15 @@ import gov.nasa.worldwind.avlist.AVKey;
 import gov.nasa.worldwind.geom.*;
 import gov.nasa.worldwind.layers.RenderableLayer;
 import gov.nasa.worldwind.render.*;
+
 import java.util.LinkedList;
 import java.util.List;
+
 import br.com.inpe.worldwind.database.DataLoaderScience;
 import br.com.inpe.worldwind.database.GeometryRecord;
 import br.com.inpe.worldwind.view.Observer;
 
-public class WorldWind implements Subject {
+public class WorldWind implements Subject{
 	private List<GeometryRecord> geometryRecord;
 	private List<Observer> observers;
 	static DataLoaderScience data;
@@ -21,9 +23,21 @@ public class WorldWind implements Subject {
 		observers = new LinkedList<Observer>();
 	}
 
+	
 	public void createShapeGreaterMunicipalityArea(long area) {
-		geometryRecord = data.SearchDataBiggestMunicipalityArea(area);
-		notifyObserverLayer(getLayer(geometryRecord));
+		//Teste
+		final long a = area;
+		new Thread(new Runnable() {
+			@Override
+			public void run() {
+				geometryRecord = data.SearchDataBiggestMunicipalityArea(a);
+				RenderableLayer layer = getLayer(geometryRecord);
+				notifyObserverLayer(layer);
+			}
+		}).start();
+		//
+		//geometryRecord = data.SearchDataBiggestMunicipalityArea(area);
+		//notifyObserverLayer(getLayer(geometryRecord));
 	}
 
 	public void createShapeEqualsMunicipalityArea(long area) {
@@ -91,5 +105,8 @@ public class WorldWind implements Subject {
 		// TODO Auto-generated method stub
 
 	}
+	/**
+	 * Teste
+	 */
 
 }
