@@ -16,6 +16,7 @@ import gov.nasa.worldwind.render.ScreenAnnotation;
 import gov.nasa.worldwind.render.ShapeAttributes;
 import gov.nasa.worldwind.terrain.ZeroElevationModel;
 import gov.nasa.worldwindx.examples.util.PowerOfTwoPaddedImage;
+
 import java.awt.Dimension;
 import java.awt.Insets;
 import java.awt.Point;
@@ -23,11 +24,19 @@ import java.awt.event.WindowAdapter;
 import java.awt.event.WindowEvent;
 import java.util.LinkedList;
 import java.util.List;
+
 import javax.swing.JFrame;
 import javax.swing.JLayeredPane;
+
+import br.com.inpe.worldwind.controller.DrawPolygon;
+import br.com.inpe.worldwind.controller.IDraw;
 import br.com.inpe.worldwind.database.GeometryRecord;
 import br.com.inpe.worldwind.model.InteriorMaterial;
-
+/**
+ * @author Heitor Guerra Carneiro
+ * @since May 16, 2015
+ * @version 1.0
+ */
 public class WorldWindView extends JFrame implements Observer {
 	private WorldWindowGLCanvas wwd;
 	private final int HEIGHT = 600;
@@ -37,6 +46,8 @@ public class WorldWindView extends JFrame implements Observer {
 			-52.302247, 7000000);
 
 	private JLayeredPane layeredPane;
+
+	private IDraw iDraw;
 
 	public WorldWindView() {
 
@@ -62,6 +73,10 @@ public class WorldWindView extends JFrame implements Observer {
 		// Remove layers with timer
 		// this.removeLayersTimer(5);
 		frameEvents();
+	}
+
+	public void setIDraw(IDraw d) {
+		this.iDraw = d;
 	}
 
 	@Override

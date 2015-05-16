@@ -14,7 +14,11 @@ import br.com.inpe.worldwind.database.GeometryRecord;
 import br.com.inpe.xmlRecord.XMLFile;
 
 import com.db4o.ObjectSet;
-	
+/**
+ * @author Heitor Guerra Carneiro
+ * @since May 16, 2015
+ * @version 1.0
+ */
 public class DataLoaderScienceTest {
 	static DataLoaderScience data;
 	private List<GeometryRecord> geometryRecords;

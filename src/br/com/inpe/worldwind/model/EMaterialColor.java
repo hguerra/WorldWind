@@ -1,5 +1,9 @@
 package br.com.inpe.worldwind.model;
-
+/**
+ * @author Heitor Guerra Carneiro
+ * @since May 16, 2015
+ * @version 1.0
+ */
 public enum EMaterialColor {
 	RED, WHITE, YELLOW, GREEN, BLUE;
 	

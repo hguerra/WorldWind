@@ -2,7 +2,11 @@ package br.com.inpe.worldwind.model;
 
 import gov.nasa.worldwind.render.Material;
 import gov.nasa.worldwind.render.ShapeAttributes;
-
+/**
+ * @author Heitor Guerra Carneiro
+ * @since May 16, 2015
+ * @version 1.0
+ */
 public class InteriorMaterial {
 
 	public static void setColorMaterial(long area, ShapeAttributes sideAttributes) {

@@ -1,7 +1,11 @@
 package br.com.inpe.worldwind.database;
 
 import java.io.Serializable;
-
+/**
+ * @author Heitor Guerra Carneiro
+ * @since May 16, 2015
+ * @version 1.0
+ */
 public class GeometryRecord implements Serializable {
 	private String municipalityName;
 	private long municipalityArea;

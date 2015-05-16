@@ -1,7 +1,5 @@
 package br.com.inpe.worldwind.modeltest;
 
-
-import gov.nasa.worldwind.layers.RenderableLayer;
 import java.util.LinkedList;
 import java.util.List;
 import org.junit.After;
@@ -11,8 +9,11 @@ import org.junit.Test;
 import br.com.inpe.worldwind.database.DataLoaderScience;
 import br.com.inpe.worldwind.database.GeometryRecord;
 import br.com.inpe.worldwind.model.WorldWindModel;
-
-
+/**
+ * @author Heitor Guerra Carneiro
+ * @since May 16, 2015
+ * @version 1.0
+ */
 public class WorldWindModelTest {
 	private WorldWindModel world;
 	private List<GeometryRecord> geometryRecord;

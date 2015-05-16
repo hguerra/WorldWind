@@ -11,7 +11,11 @@ import org.junit.Test;
 
 import br.com.inpe.worldwind.database.GeometryRecord;
 import br.com.inpe.xmlRecord.XMLFile;
-
+/**
+ * @author Heitor Guerra Carneiro
+ * @since May 16, 2015
+ * @version 1.0
+ */
 public class XMLFileTest {
 	private int geometryRecordsSize;
 	private String filename;

@@ -1,5 +1,9 @@
 package br.com.inpe.worldwind.controller;
-
+/**
+ * @author Heitor Guerra Carneiro
+ * @since May 16, 2015
+ * @version 1.0
+ */
 import br.com.inpe.worldwind.model.WorldWindModel;
 import br.com.inpe.worldwind.view.WorldWindView;
 

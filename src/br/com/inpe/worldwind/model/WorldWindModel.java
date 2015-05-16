@@ -6,7 +6,11 @@ import java.util.List;
 import br.com.inpe.worldwind.database.DataLoaderScience;
 import br.com.inpe.worldwind.database.GeometryRecord;
 import br.com.inpe.worldwind.view.Observer;
-
+/**
+ * @author Heitor Guerra Carneiro
+ * @since May 16, 2015
+ * @version 1.0
+ */
 public class WorldWindModel implements Subject {
 	List<GeometryRecord> geometryRecord;
 	private List<Observer> observers;

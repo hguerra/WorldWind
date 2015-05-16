@@ -9,7 +9,11 @@ import java.io.FileOutputStream;
 import java.util.List;
 
 import br.com.inpe.worldwind.database.GeometryRecord;
-
+/**
+ * @author Heitor Guerra Carneiro
+ * @since May 16, 2015
+ * @version 1.0
+ */
 public class XMLFile {
 	public static void write(GeometryRecord object, String filename)
 			throws Exception {
