@@ -11,13 +11,16 @@ import gov.nasa.worldwind.layers.Layer;
 import gov.nasa.worldwind.layers.LayerList;
 import gov.nasa.worldwind.layers.RenderableLayer;
 import gov.nasa.worldwind.render.BasicShapeAttributes;
+import gov.nasa.worldwind.render.GlobeAnnotation;
 import gov.nasa.worldwind.render.Polygon;
 import gov.nasa.worldwind.render.ScreenAnnotation;
 import gov.nasa.worldwind.render.ShapeAttributes;
 import gov.nasa.worldwind.terrain.ZeroElevationModel;
 import gov.nasa.worldwindx.examples.util.PowerOfTwoPaddedImage;
 
+import java.awt.Color;
 import java.awt.Dimension;
+import java.awt.Font;
 import java.awt.Insets;
 import java.awt.Point;
 import java.awt.event.WindowAdapter;
@@ -28,9 +31,10 @@ import java.util.List;
 import javax.swing.JFrame;
 import javax.swing.JLayeredPane;
 
-import br.com.inpe.worldwind.controller.DrawPolygon;
+import br.com.inpe.worldwind.controller.IAnnotation;
 import br.com.inpe.worldwind.controller.IDraw;
 import br.com.inpe.worldwind.database.GeometryRecord;
+
 /**
  * @author Heitor Guerra Carneiro
  * @since May 16, 2015
@@ -47,6 +51,7 @@ public class WorldWindView extends JFrame implements Observer {
 	private JLayeredPane layeredPane;
 
 	private IDraw iDraw;
+	private IAnnotation annotation;
 
 	public WorldWindView() {
 
@@ -68,14 +73,15 @@ public class WorldWindView extends JFrame implements Observer {
 
 		layeredPane.doLayout();
 
-		this.printLogo();
-		// Remove layers with timer
-		// this.removeLayersTimer(5);
 		frameEvents();
 	}
 
 	public void setIDraw(IDraw d) {
 		this.iDraw = d;
+	}
+
+	public void setIAnnotation(IAnnotation a) {
+		this.annotation = a;
 	}
 
 	@Override
@@ -86,28 +92,59 @@ public class WorldWindView extends JFrame implements Observer {
 		}
 	}
 
-	private void printLogo() {
+	public void printLogo() {
+		try {
+			PowerOfTwoPaddedImage pic = PowerOfTwoPaddedImage
+					.fromPath("images/logo.png");
+			AnnotationLayer annLayer = new AnnotationLayer();
 
-		PowerOfTwoPaddedImage pic = PowerOfTwoPaddedImage
-				.fromPath("database/logo.png");
-		AnnotationLayer annLayer = new AnnotationLayer();
+			ScreenAnnotation logoDWIH = new ScreenAnnotation("",
+					new Point(0, 0));
 
-		ScreenAnnotation logoDWIH = new ScreenAnnotation("", new Point(0, 0));
+			logoDWIH.getAttributes().setImageSource(pic.getPowerOfTwoImage());
+			logoDWIH.getAttributes().setImageRepeat(AVKey.REPEAT_NONE);
+			logoDWIH.getAttributes().setAdjustWidthToText(AVKey.SIZE_FIXED);
+			logoDWIH.getAttributes().setDrawOffset(new Point(100, 0));
+			logoDWIH.getAttributes().setHighlightScale(1);
 
-		logoDWIH.getAttributes().setImageSource(pic.getPowerOfTwoImage());
-		logoDWIH.getAttributes().setImageRepeat(AVKey.REPEAT_NONE);
-		logoDWIH.getAttributes().setAdjustWidthToText(AVKey.SIZE_FIXED);
-		logoDWIH.getAttributes().setDrawOffset(new Point(100, 0));
-		logoDWIH.getAttributes().setHighlightScale(1);
+			logoDWIH.getAttributes().setInsets(new Insets(0, 40, 0, 0));
+			logoDWIH.getAttributes().setSize(new Dimension(120, 100));
 
-		logoDWIH.getAttributes().setInsets(new Insets(0, 40, 0, 0));
-		logoDWIH.getAttributes().setSize(new Dimension(120, 100));
+			logoDWIH.getAttributes().setImageScale(0.22);
+			logoDWIH.getAttributes().setImageOffset(new Point(10, 10));
 
-		logoDWIH.getAttributes().setImageScale(0.22);
-		logoDWIH.getAttributes().setImageOffset(new Point(10, 10));
+			annLayer.addAnnotation(logoDWIH);
+			insertBeforeCompass(this.wwd, annLayer);
+		} catch (Exception e) {
+			System.out.println("Error to add Image!");
+		}
+	}
 
-		annLayer.addAnnotation(logoDWIH);
-		insertBeforeBeforeCompass(this.wwd, annLayer);
+	public void printComment() {
+		try {
+			Position position = new Position(Position.fromDegrees(-23, -45), 0.1);
+			PowerOfTwoPaddedImage pic = PowerOfTwoPaddedImage
+					.fromPath("images/logo.png");
+			AnnotationLayer annotationlayer = new AnnotationLayer();
+			GlobeAnnotation ga = new GlobeAnnotation(
+					"\n\n\n\n\n Interactive Data Visualization" + " - INPE.",
+					position, Font.decode("Arial-BOLD-13"));
+			ga.getAttributes().setImageSource(pic.getPowerOfTwoImage());
+			ga.getAttributes().setBorderColor(Color.WHITE);
+			ga.getAttributes().setBackgroundColor(Color.WHITE);
+			ga.getAttributes().setBorderWidth(1);
+			ga.getAttributes().setImageScale(0.2);
+			ga.getAttributes().setSize(new Dimension(480, 145));
+			ga.setAlwaysOnTop(true);
+
+			ga.setMaxActiveAltitude(1081941);
+
+			annotationlayer.addAnnotation(ga);
+
+			insertBeforeCompass(getWwd(), annotationlayer);
+		} catch (Exception e) {
+			System.out.println("Error to add Image!");
+		}
 
 	}
 
