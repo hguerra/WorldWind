@@ -1,4 +1,4 @@
-package br.com.inpe.worldwind.model;
+package br.com.inpe.worldwind.view;
 /**
  * @author Heitor Guerra Carneiro
  * @since May 16, 2015

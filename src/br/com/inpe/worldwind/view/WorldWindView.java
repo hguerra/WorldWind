@@ -31,7 +31,6 @@ import javax.swing.JLayeredPane;
 import br.com.inpe.worldwind.controller.DrawPolygon;
 import br.com.inpe.worldwind.controller.IDraw;
 import br.com.inpe.worldwind.database.GeometryRecord;
-import br.com.inpe.worldwind.model.InteriorMaterial;
 /**
  * @author Heitor Guerra Carneiro
  * @since May 16, 2015

@@ -1,4 +1,4 @@
-package br.com.inpe.worldwind.model;
+package br.com.inpe.worldwind.view;
 
 import gov.nasa.worldwind.render.Material;
 import gov.nasa.worldwind.render.ShapeAttributes;

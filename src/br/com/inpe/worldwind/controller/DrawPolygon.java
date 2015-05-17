@@ -24,13 +24,13 @@ public class DrawPolygon implements IDraw {
 	}
 
 	@Override
-	public void ShapeEqualsMunicipalityArea(long area) {
+	public void drawShapeEqualsMunicipalityArea(long area) {
 		model.createShapeEqualsMunicipalityArea(area);
 		
 	}
 
 	@Override
-	public void ShapeLessMunicipalityArea(long area) {
+	public void drawShapeLessMunicipalityArea(long area) {
 		model.createShapeLessMunicipalityArea(area);
 		
 	}

@@ -13,13 +13,13 @@ public class AltimetricMap implements IDraw{
 	}
 
 	@Override
-	public void ShapeEqualsMunicipalityArea(long area) {
+	public void drawShapeEqualsMunicipalityArea(long area) {
 		// TODO Auto-generated method stub
 		
 	}
 
 	@Override
-	public void ShapeLessMunicipalityArea(long area) {
+	public void drawShapeLessMunicipalityArea(long area) {
 		// TODO Auto-generated method stub
 		
 	}

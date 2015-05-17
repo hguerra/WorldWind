@@ -29,19 +29,19 @@ public class GeometryRecord implements Serializable {
 		return false;
 	}
 
-	public boolean matchesMunicipalityArea(long parameter) {
+	public boolean matchesEqualsMunicipalityArea(long parameter) {
 		if (parameter == getMunicipalityArea())
 			return true;
 		return false;
 	}
 	
-	public boolean matchesBiggestMunicipalityArea(long parameter) {
+	public boolean matchesGreaterMunicipalityArea(long parameter) {
 		if (parameter < getMunicipalityArea())
 			return true;
 		return false;
 	}
 	
-	public boolean matchesSmallestMunicipalityArea(long parameter) {
+	public boolean matchesLessMunicipalityArea(long parameter) {
 		if (parameter > getMunicipalityArea())
 			return true;
 		return false;

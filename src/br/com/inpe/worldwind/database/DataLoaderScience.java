@@ -52,7 +52,7 @@ public class DataLoaderScience {
 		ObjectSet<GeometryRecord> queryList = query.execute();
 		List<GeometryRecord> result = new LinkedList<GeometryRecord>();
 		for (GeometryRecord geo : queryList) {
-			if (geo.matchesMunicipalityArea(parameter))
+			if (geo.matchesEqualsMunicipalityArea(parameter))
 				result.add(geo);
 		}
 		return result;
@@ -64,7 +64,7 @@ public class DataLoaderScience {
 		ObjectSet<GeometryRecord> queryList = query.execute();
 		List<GeometryRecord> result = new LinkedList<GeometryRecord>();
 		for (GeometryRecord geo : queryList) {
-			if (geo.matchesBiggestMunicipalityArea(parameter))
+			if (geo.matchesGreaterMunicipalityArea(parameter))
 				result.add(geo);
 		}
 		return result;
@@ -76,7 +76,7 @@ public class DataLoaderScience {
 		ObjectSet<GeometryRecord> queryList = query.execute();
 		List<GeometryRecord> result = new LinkedList<GeometryRecord>();
 		for (GeometryRecord geo : queryList) {
-			if (geo.matchesSmallestMunicipalityArea(parameter))
+			if (geo.matchesLessMunicipalityArea(parameter))
 				result.add(geo);
 		}
 		return result;
@@ -94,7 +94,7 @@ public class DataLoaderScience {
 		return result;
 	}
 
-	public void remevoDataMunicipalityName(String parameter) {
+	public void removeDataMunicipalityName(String parameter) {
 		List<GeometryRecord> result = SearchDataMunicipalityName(parameter);
 		for (GeometryRecord geo : result) {
 			dataBase.delete(geo);
