@@ -4,8 +4,7 @@ package br.com.inpe.worldwind.controller;
  * @since May 16, 2015
  * @version 1.0
  */
-public class AltimetricMap {
-
-	
-	
+public interface ILine {
+	public void setPositionsExample();
+	public void drawLine();
 }

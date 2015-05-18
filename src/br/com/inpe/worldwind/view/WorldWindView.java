@@ -13,9 +13,13 @@ import gov.nasa.worldwind.layers.RenderableLayer;
 import gov.nasa.worldwind.render.BasicShapeAttributes;
 import gov.nasa.worldwind.render.GlobeAnnotation;
 import gov.nasa.worldwind.render.Polygon;
+import gov.nasa.worldwind.render.Polyline;
 import gov.nasa.worldwind.render.ScreenAnnotation;
 import gov.nasa.worldwind.render.ShapeAttributes;
 import gov.nasa.worldwind.terrain.ZeroElevationModel;
+import gov.nasa.worldwind.util.UnitsFormat;
+import gov.nasa.worldwind.util.measure.MeasureTool;
+import gov.nasa.worldwind.util.measure.MeasureToolController;
 import gov.nasa.worldwindx.examples.util.PowerOfTwoPaddedImage;
 
 import java.awt.Color;
@@ -30,6 +34,7 @@ import java.util.List;
 
 import javax.swing.JFrame;
 import javax.swing.JLayeredPane;
+import javax.swing.JOptionPane;
 
 import br.com.inpe.worldwind.controller.IAnnotation;
 import br.com.inpe.worldwind.controller.IDraw;
@@ -122,7 +127,8 @@ public class WorldWindView extends JFrame implements Observer {
 
 	public void printComment() {
 		try {
-			Position position = new Position(Position.fromDegrees(-23, -45), 0.1);
+			Position position = new Position(Position.fromDegrees(-23, -45),
+					0.1);
 			PowerOfTwoPaddedImage pic = PowerOfTwoPaddedImage
 					.fromPath("images/logo.png");
 			AnnotationLayer annotationlayer = new AnnotationLayer();
@@ -146,6 +152,24 @@ public class WorldWindView extends JFrame implements Observer {
 			System.out.println("Error to add Image!");
 		}
 
+	}
+
+	public void drawLine(String displayName, List<Position> positions) {
+		RenderableLayer layer = new RenderableLayer();
+		Polyline polyline = new Polyline(positions, 3e4);
+		polyline.setColor(getBackground().ORANGE);
+		polyline.setLineWidth(3);
+		polyline.setValue(AVKey.DISPLAY_NAME, displayName);
+		layer.addRenderable(polyline);
+		insertBeforeCompass(getWwd(), layer);
+		
+		MeasureTool measure = new MeasureTool(this.getWwd());
+		measure.setController(new MeasureToolController());
+		measure.getUnitsFormat().setLengthUnits(UnitsFormat.KILOMETERS);
+		measure.setFollowTerrain(true);
+		measure.setMeasureShape(new Polyline(positions));
+		
+		JOptionPane.showMessageDialog(this, measure.getLength()/1000 + " km ");
 	}
 
 	public void removeLayersTimer(int seconds) {

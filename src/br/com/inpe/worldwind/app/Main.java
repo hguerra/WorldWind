@@ -26,12 +26,12 @@ public class Main {
 		
 		model.registerObserver(view);
 		//Draw Polygon
-		/*
+		
 		IDraw polygonBorderPositions = new DrawPolygon(model, view);
 		polygonBorderPositions.drawShapeGreaterMunicipalityArea(0);
 		
 		view.setIDraw(polygonBorderPositions);
-		 */
+		 
 		
 		//Screen Annotations
 		/*
@@ -39,11 +39,12 @@ public class Main {
 		annotation.addAnnotation();
 		view.setIAnnotation(annotation);
 		*/
-		
+		/*
 		//Comment
 		IAnnotation annotation = new Comment(view, model);
 		annotation.addAnnotation();
 		view.setIAnnotation(annotation);
+		*/
 		view.setVisible(true);
 		
 	}
