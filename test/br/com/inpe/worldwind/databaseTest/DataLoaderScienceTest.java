@@ -9,6 +9,7 @@ import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
 
+import br.com.inpe.memorytest.MemoryTest;
 import br.com.inpe.worldwind.database.DataLoaderScience;
 import br.com.inpe.worldwind.database.GeometryRecord;
 import br.com.inpe.xmlRecord.XMLFile;
@@ -23,11 +24,13 @@ public class DataLoaderScienceTest {
 	static DataLoaderScience data;
 	private List<GeometryRecord> geometryRecords;
 	private String filename;
+	private MemoryTest memory;
 	@Before
 	public void start(){
 		data = DataLoaderScience.getInstance();
 		filename = "../WorldWind/xmldata/data.xml";
 		geometryRecords = new LinkedList<GeometryRecord>();
+		memory = new MemoryTest();
 	}
 	/*
 	 //AO RODAR ESSE TEST ELE ADICIONA NOVAMENTE OS DADOS NO BANCO.
@@ -80,5 +83,6 @@ public class DataLoaderScienceTest {
 		geometryRecords = null;
 		filename = null;
 		System.gc();
+		MemoryTest.calculateusedMemory();
 	}
 }

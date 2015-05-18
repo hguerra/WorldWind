@@ -29,7 +29,6 @@ public class Main {
 		
 		IDraw polygonBorderPositions = new DrawPolygon(model, view);
 		polygonBorderPositions.drawShapeGreaterMunicipalityArea(0);
-		
 		view.setIDraw(polygonBorderPositions);
 		 
 		
