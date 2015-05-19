@@ -16,31 +16,17 @@ import br.com.inpe.worldwind.view.WorldWindView;
 public class DrawLine implements ILine{
 	private WorldWindView view;
 	private WorldWindModel model;
-	private String displayName;
-	private List<Position> positions;
 
-	public DrawLine(WorldWindView view, WorldWindModel model, String displayName) {
+	
+
+	public DrawLine(WorldWindView view, WorldWindModel model) {
 		super();
 		this.view = view;
 		this.model = model;
-		this.displayName = displayName;
-		positions = new LinkedList<Position>();
 	}
-	
-	public void setPositionsExample(){
-		 positions.add(Position.fromDegrees(52, 8));
-         positions.add(Position.fromDegrees(52, 13));
-         positions.add(Position.fromDegrees(50, 19));
-         positions.add(Position.fromDegrees(49, 19));
-	}
-	
-	public void drawLine(){
-		new Thread(new Runnable() {
-			@Override
-			public void run() {
-				view.drawLine(displayName, positions);;
-			}
-		}).start();
+
+	public void drawLine(String displayName, List<Position> positions){
+		view.drawLine(displayName, positions);
 	}
 	
 	

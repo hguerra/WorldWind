@@ -38,6 +38,7 @@ import javax.swing.JOptionPane;
 
 import br.com.inpe.worldwind.controller.IAnnotation;
 import br.com.inpe.worldwind.controller.IDraw;
+import br.com.inpe.worldwind.controller.ILine;
 import br.com.inpe.worldwind.database.GeometryRecord;
 
 /**
@@ -57,6 +58,7 @@ public class WorldWindView extends JFrame implements Observer {
 
 	private IDraw iDraw;
 	private IAnnotation annotation;
+	private ILine line;
 
 	public WorldWindView() {
 
@@ -81,12 +83,30 @@ public class WorldWindView extends JFrame implements Observer {
 		frameEvents();
 	}
 
-	public void setIDraw(IDraw d) {
+	public void setIDraw(IDraw d, int key, long area) {
 		this.iDraw = d;
+		switch (key) {
+		case 1:
+			d.drawShapeGreaterMunicipalityArea(area);
+			break;
+		case 2:
+			d.drawShapeEqualsMunicipalityArea(area);
+			break;
+		case 3:
+			d.drawShapeLessMunicipalityArea(area);
+			break;
+		}
+
 	}
 
 	public void setIAnnotation(IAnnotation a) {
 		this.annotation = a;
+		a.addAnnotation();
+	}
+
+	public void setIline(ILine l, String displayName, List<Position> positions) {
+		this.line = l;
+		l.drawLine(displayName, positions);
 	}
 
 	@Override
@@ -162,14 +182,13 @@ public class WorldWindView extends JFrame implements Observer {
 		polyline.setValue(AVKey.DISPLAY_NAME, displayName);
 		layer.addRenderable(polyline);
 		insertBeforeCompass(getWwd(), layer);
-		
+
 		MeasureTool measure = new MeasureTool(this.getWwd());
 		measure.setController(new MeasureToolController());
 		measure.getUnitsFormat().setLengthUnits(UnitsFormat.KILOMETERS);
 		measure.setFollowTerrain(true);
 		measure.setMeasureShape(new Polyline(positions));
-		
-		JOptionPane.showMessageDialog(this, measure.getLength()/1000 + " km ");
+		System.out.println(measure.getLength() / 1000 + " km ");
 	}
 
 	public void removeLayersTimer(int seconds) {
