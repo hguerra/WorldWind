@@ -53,8 +53,8 @@ public class ShapefilesLayerTest extends JFrame {
 		/**
 		 * Inserindo modelos
 		 */
-		shapefile.insertRenderableLayer(VEGTYPE_2000,
-				DataColors.getOriginalColors());
+//		shapefile.insertRenderableLayer(VEGTYPE_2000,
+//				DataColors.getOriginalColors());
 		
 //		Map<Double, Color> colors = shapefile.getColorScale(
 //				VEGTYPE_2000, DataColors.getColors());
@@ -64,6 +64,9 @@ public class ShapefilesLayerTest extends JFrame {
 		 * Informacao modelos
 		 */
 		//shapefile.printShapefileInfo(FILE_PATH_DADOS_ANA_PART_1, "attr", false);
+		
+		shapefile.insertRenderableLayer(FILE_PATH_DADOS_ANA_PART_1, Color.red, null);
+		shapefile.insertRenderableLayer(FILE_PATH_DADOS_ANA_PART_2, Color.red, null);
 	}
 
 	void printMapColors(Map<Double, Color> colors) {
